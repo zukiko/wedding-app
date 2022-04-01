@@ -1,0 +1,58 @@
+.invi-wrapper {
+  min-height: 100vh;
+  text-align: center;
+  font-family: 'Kaisei Opti', serif;
+  background-image: linear-gradient(135deg, #fdfcfb 0%, #e2d1c3 100%);
+  color: rgb(58, 54, 54);
+}
+.invi-container {
+  width: 400px;
+  margin: 0 auto;
+}
+.invi-top {
+  font-family: 'Josefin Slab', serif;
+  font-size: 28px;
+  padding: 20px;
+}
+.field {
+  margin-bottom: 15px;
+}
+.field label {
+  font-size: 15px;
+  padding-top: 10px;
+}
+input[type="text"] {
+  border: none;
+  border-bottom: solid 1px gray;
+  margin-top: 10px;
+  /* background-color: transparent; */
+}
+input[type="email"] {
+  border: none;
+  border-bottom: solid 1px gray;
+  margin-top: 10px;
+  background-color: transparent;
+}
+input[type="password"] {
+  border: none;
+  border-bottom: solid 1px gray;
+  margin-top: 10px;
+  /* background-color: transparent; */
+}
+.field textarea {
+  border: none;
+  border-bottom: solid 1px gray;
+  margin-top: 10px;
+  width: 70%;
+  background-color: transparent;
+}
+.form-placeholder::placeholder {
+  text-align: center;
+}
+.form-placeholder:placeholder-shown {
+  background-color: transparent;
+
+}
+#password {
+  display: none;
+}
