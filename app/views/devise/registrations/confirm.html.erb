@@ -1,50 +1,59 @@
-<h2>入力情報の確認</h2>
+<div class="invi-wrapper">
+  <div class="invi-container">
+    <div class="invi-top-confirm">
+      <h1>入力情報の確認</h1>
+    </div>
+  <%= form_with model: @user, url: user_registration_path, local: true do |f| %>
+    <div class="field">
+      <p><label class="form-text">いずれかをお選び下さい</label></br>
+      <%= f.text_field :attendance, value: @user.attendance, readonly: true %></p>
+    </div>
+    <div class="field">
+      <p><label class="form-text">お名前</label></br>
+      <%= f.text_field :last_name, value: @user.last_name, readonly: true %>
+      <%= f.text_field :first_name, value: @user.first_name, readonly: true %></p>
+    </div>
+    <div class="field">
+      <p><label class="form-text">お名前 (カナ)</label></br>
+      <%= f.text_field :last_name_kana, value: @user.last_name_kana, readonly: true %>
+      <%= f.text_field :first_name_kana, value: @user.first_name_kana, readonly: true %></p>
+    </div>
+    <div class="field">
+      <p><label class="form-text">いずれかをお選び下さい</label></br>
+      <%= f.text_field :bride_groom, value: @user.bride_groom, readonly: true %></p>
+    </div>
+    <div class="field">
+      <p><%= f.label :email %></br>
+      <%= f.text_field :email, value: @user.email, readonly: true %></p>
+    </div>
+    <div class="field">
+      <p><label class="form-text">郵便番号</label></br>
+      <%= f.text_field :postal_code, value: @user.postal_code, readonly: true %></p>
+    </div>
+    <div class="field">
+      <label class="form-text">ご住所</label></br>
+      <%= f.text_field :prefecture_code, value: @user.prefecture_code, readonly: true %>
+      <%= f.text_field :city, value: @user.city, readonly: true %>
+      <%= f.text_field :address, value: @user.address, readonly: true %>
+      <%= f.text_field :building, value: @user.building, readonly: true %></p>
+      </p>
+    </div>
+    <div class="field" id="password">
+      <p><%= f.label :password %>
+      <%= f.text_field :password, value: @user.password, readonly: true %></p>
+    </div>
+    <div class="field">
+      <p><label class="form-text">アレルギーなどございましたらご記入ください</label></br>
+      <%= f.text_area :allergy, value: @user.allergy, readonly: true %></p>
+    </div>
+    <div class="field">
+      <p><label class="form-text">バスのご利用</label></br>
+      <%= f.text_area :bus, value: @user.bus, readonly: true %></p>
+    </div>
 
-<%= form_with model: @user, url: user_registration_path, local: true do |f| %>
+      <%= f.submit "修正する", name: :back %>
+      <%= f.submit "登録する" %>
 
-    <p><%= f.label :attendance %>
-    <%= f.text_field :attendance, value: @user.attendance, readonly: true %></p>
-    
-    <p><%= f.label "お名前" %>
-    <%= f.text_field :last_name, value: @user.last_name, readonly: true %>
-    <%= f.text_field :first_name, value: @user.first_name, readonly: true %></p>
-    
-    <p><%= f.label "お名前(カナ)" %>
-    <%= f.text_field :last_name_kana, value: @user.last_name_kana, readonly: true %>
-    <%= f.text_field :first_name_kana, value: @user.first_name_kana, readonly: true %></p>
-    
-    <p><%= f.label :bride_groom %>
-    <%= f.text_field :bride_groom, value: @user.bride_groom, readonly: true %></p>
-    
-    <p><%= f.label :email %>
-    <%= f.text_field :email, value: @user.email, readonly: true %></p>
-    
-    <p><%= f.label :postal_code %>
-    <%= f.text_field :postal_code, value: @user.postal_code, readonly: true %></p>
-    
-    <p><%= f.label :prefecture_code %>
-    <%= f.text_field :prefecture_code, value: @user.prefecture_code, readonly: true %></p>
-    
-    <p><%= f.label :city %>
-    <%= f.text_field :city, value: @user.city, readonly: true %></p>
-    
-    <p><%= f.label :address %>
-    <%= f.text_field :address, value: @user.address, readonly: true %></p>
-    
-    <p><%= f.label :building %>
-    <%= f.text_field :building, value: @user.building, readonly: true %></p>
-    
-    <p><%= f.label :password %>
-    <%= f.text_field :password, value: @user.password, readonly: true %></p>
-
-    <p><%= f.label :allergy %>
-    <%= f.text_field :allergy, value: @user.allergy, readonly: true %></p>
-    
-    <p><%= f.label :bus %>
-    <%= f.text_field :bus, value: @user.bus, readonly: true %></p>
-    
-
-    <%= f.submit "修正する", name: :back %>
-    <%= f.submit "登録する" %>
-
-  <% end %>
+    <% end %>
+  </div>
+</div>

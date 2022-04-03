@@ -25,7 +25,7 @@ input[type="text"] {
   border: none;
   border-bottom: solid 1px gray;
   margin-top: 10px;
-  /* background-color: transparent; */
+  background-color: transparent;
 }
 input[type="email"] {
   border: none;
@@ -33,12 +33,12 @@ input[type="email"] {
   margin-top: 10px;
   background-color: transparent;
 }
-input[type="password"] {
+/* input[type="password"] {
   border: none;
   border-bottom: solid 1px gray;
   margin-top: 10px;
-  /* background-color: transparent; */
-}
+  background-color: transparent;
+} */
 .field textarea {
   border: none;
   border-bottom: solid 1px gray;
