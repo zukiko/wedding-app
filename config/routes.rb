@@ -9,4 +9,6 @@ Rails.application.routes.draw do
   end
 
   root to: "invitations#index"
+  resources :receptions, only:[:index]
+  resources :seatinglists, only:[:index]
 end
