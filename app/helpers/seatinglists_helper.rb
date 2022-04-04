@@ -1,0 +1,2 @@
+module SeatinglistsHelper
+end
