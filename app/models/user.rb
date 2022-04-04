@@ -18,4 +18,6 @@ class User < ApplicationRecord
     validates :address
     validates :email
   end
+
+  has_many :seating_lists
 end
