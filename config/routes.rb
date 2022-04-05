@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  mount RailsAdmin::Engine => '/admin', as: 'rails_admin'
   devise_for :users, controllers: {
     registrations: 'users/registrations',
     sessions: 'users/sessions'
@@ -10,5 +11,5 @@ Rails.application.routes.draw do
 
   root to: "invitations#index"
   resources :receptions, only:[:index]
-  resources :seatinglists, only:[:index]
+  resources :seatinglists, only:[:index,:new,:create]
 end
