@@ -19,5 +19,5 @@ class User < ApplicationRecord
     validates :email
   end
 
-  has_many :seating_lists
+  has_one :seating_list, dependent: :destroy
 end

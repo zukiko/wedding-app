@@ -1,6 +1,6 @@
 RailsAdmin.config do |config|
   config.asset_source = :webpacker
-  config.main_app_name = %w(座席表 管理画面)
+  config.main_app_name = %w(席次表 管理画面)
   ### Popular gems integration
 
   ## == Devise ==

@@ -1,0 +1,28 @@
+.takasago {
+  width: 30%;
+  margin: 0 auto;
+}
+.takasago img {
+  width: 100%;
+}
+.table-container {
+  margin: 0 40px;
+  margin-top: 50px;
+}
+.table {
+  padding: 50px;
+  background-image: url("table.jpg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  width: 30%;
+}
+.table img {
+  width: 100%;
+}
+.table-container ul {
+  display: flex;
+  list-style: none;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}

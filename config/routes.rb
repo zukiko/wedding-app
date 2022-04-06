@@ -11,5 +11,5 @@ Rails.application.routes.draw do
 
   root to: "invitations#index"
   resources :receptions, only:[:index]
-  resources :seatinglists, only:[:index,:new,:create]
+  resources :seatinglists, only:[:index]
 end
