@@ -10,13 +10,11 @@
     </div>
     <div class="field">
       <p><label class="form-text">お名前</label></br>
-      <%= f.text_field :last_name, value: @user.last_name, readonly: true %>
-      <%= f.text_field :first_name, value: @user.first_name, readonly: true %></p>
+      <%= f.text_field :name, value: @user.name, readonly: true %></p>
     </div>
     <div class="field">
       <p><label class="form-text">お名前 (カナ)</label></br>
-      <%= f.text_field :last_name_kana, value: @user.last_name_kana, readonly: true %>
-      <%= f.text_field :first_name_kana, value: @user.first_name_kana, readonly: true %></p>
+      <%= f.text_field :name_kana, value: @user.name_kana, readonly: true %></p>
     </div>
     <div class="field">
       <p><label class="form-text">いずれかをお選び下さい</label></br>
