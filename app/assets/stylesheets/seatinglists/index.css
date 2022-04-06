@@ -1,21 +1,58 @@
+.seatinglists-wrapper {
+  font-family: 'Noto Serif JP', serif;
+  background-image: linear-gradient(135deg, #fdfcfb 0%, #e2d1c3 100%);
+}
 .takasago {
-  width: 30%;
-  margin: 0 auto;
+  background-image: url("takasago.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  height: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.groom-name {
+  width: 10%;
+  text-align: center;
+  font-size: 21px;
+}
+.groom-name span, 
+.bride-name span {
+  font-size: 15px;
+}
+.bride-name {
+  width: 10%;
+  text-align: center;
+  font-size: 21px;
 }
 .takasago img {
   width: 100%;
+  
 }
 .table-container {
   margin: 0 40px;
   margin-top: 50px;
 }
 .table {
-  padding: 50px;
-  background-image: url("table.jpg");
+  height: 180px;
+  background-image: url("table.png");
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center;
-  width: 30%;
+  width: 33%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 30px;
+  position: relative;
+}
+.attendee {
+  padding: 20px 0;
+  /* height: 30px; */
+  width: 50%;
+  text-align: center;
 }
 .table img {
   width: 100%;
@@ -24,5 +61,28 @@
   display: flex;
   list-style: none;
   justify-content: space-around;
+  flex-wrap: wrap;
+}
+.login-user-table {
+  text-align: center;
+  font-size: 18px;
+}
+.login-user-table a {
+  color: black;
+}
+.table-num {
+  font-family: 'Neonderthaw', cursive;
+  font-size: 60px;
+  position: absolute;
+  width: auto;
+  height: auto;
+}
+.attendee-table {
+  font-family: 'Neonderthaw', cursive;
+  font-size: 60px;
+}
+
+.seats{
+  display: flex;
   flex-wrap: wrap;
 }
