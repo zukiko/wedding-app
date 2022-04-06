@@ -24,10 +24,8 @@ ActiveRecord::Schema.define(version: 2022_04_04_064637) do
   create_table "users", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
     t.string "attendance", null: false
     t.string "bride_groom", null: false
-    t.string "last_name", null: false
-    t.string "first_name", null: false
-    t.string "last_name_kana", null: false
-    t.string "first_name_kana", null: false
+    t.string "name", null: false
+    t.string "name_kana", null: false
     t.string "postal_code", null: false
     t.string "prefecture_code", null: false
     t.string "city", null: false

@@ -8,10 +8,8 @@ class User < ApplicationRecord
   with_options presence: true do
     validates :attendance
     validates :bride_groom
-    validates :last_name
-    validates :first_name
-    validates :last_name_kana
-    validates :first_name_kana
+    validates :name
+    validates :name_kana
     validates :postal_code
     validates :prefecture_code
     validates :city

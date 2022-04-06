@@ -9,11 +9,11 @@ class SeatinglistsController < ApplicationController
     @lists.each do |list|
         
       if list.table == 'A'
-        @Atable_nameLists.push(list.user.last_name)
+        @Atable_nameLists.push(list.user.name)
       elsif list.table == 'B'
-        @Btable_nameLists.push(list.user.last_name)
+        @Btable_nameLists.push(list.user.name)
       elsif list.table == 'C'
-        @Ctable_nameLists.push(list.user.last_name)
+        @Ctable_nameLists.push(list.user.name)
       end
 
     end
