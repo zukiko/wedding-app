@@ -1,15 +1,25 @@
 ※座席表ページ
-<div class="seatinglists-wrapper">
-  <%= link_to "席次表管理画面", rails_admin_path %>
+<%= link_to "席次表管理画面", rails_admin_path %>
 
+<div class="seatinglists-wrapper">
+  <%= link_to "TOP" , receptions_path,class:"top-btn" %>
   <div class="table-container">
     <div class="login-user-table">
       <% if user_signed_in? %>
-        <%= link_to "#{current_user.name} 様", "#" %>
+        <%= "#{current_user.name} 様" %>
         <% @tables.each do |table| %>
         のお席は<span class="attendee-table"><%= table.table %></span>テーブルです
+        <div class="attendee-message">
+          <ul>
+            <li class="message-card">
+              <%= image_tag "attendee-message.jpg" %>
+            </li>
+            <li class="text">
+              <%= simple_format(table.message) %>
+            </li>
+          </ul>
+        </div>
         <% end %>
-
       <% end %>
     </div>
     <div class="takasago">

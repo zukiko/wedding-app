@@ -29,15 +29,12 @@
 .takasago img {
   width: 100%;
 }
-.table-container {
-  margin: 0 40px;
-  margin-top: 50px;
-}
 .table-container ul {
   display: flex;
   list-style: none;
   justify-content: space-around;
   flex-wrap: wrap;
+  align-items: center;
 }
 .table {
   height: 180px;
@@ -63,6 +60,7 @@
 .login-user-table {
   text-align: center;
   font-size: 18px;
+  background-color: #f3e9e2;
 }
 .login-user-table a {
   color: black;
@@ -80,4 +78,39 @@
 .attendee-table {
   font-family: 'Neonderthaw', cursive;
   font-size: 60px;
+}
+.attendee-message {
+  padding-top: 20px;
+  position: relative;
+}
+.attendee-message::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  box-shadow: 0px 20px 20px 20px #f3e9e2 ;
+}
+.message-card {
+  width: 50%;
+  border-radius: 50%;
+  position: relative;
+}
+.message-card::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  box-shadow: inset 0px 0px 9px 18px #f3e9e2 ;
+}
+.message-card img {
+  width: 100%;
+}
+.text {
+  position: absolute;
+  text-align: left;
+  font-family: 'Kaisei Opti', serif;
 }
