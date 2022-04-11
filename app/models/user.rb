@@ -18,4 +18,5 @@ class User < ApplicationRecord
   end
 
   has_one :seating_list, dependent: :destroy
+  has_many :photos
 end
