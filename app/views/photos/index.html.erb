@@ -1,11 +1,19 @@
 <div class="photo-wrapper">
-※写真投稿機能ページ
-
-<%= link_to "写真を投稿", new_photo_path %><br>
-
-<% @photos.each do |photo| %>
-  <%= image_tag photo.image.variant(resize: '500x500') %>
-  <%= photo.text %><br>
-<% end %>
-
+  <div class="post-btn">
+    <%= link_to "写真を投稿", new_photo_path %>
+  </div>
+  <div class="photo-container">
+    <div class="owl-carousel">
+      <% @photos.each do |photo| %>
+        <div class="items">
+          <div class="photo-img">
+            <%= image_tag photo.image.variant(resize: '300x300') %><br>
+          </div>
+          <div class="photo-text">
+            <%= photo.text %>
+          </div>
+        </div>
+      <% end %>
+    </div>
+  </div>
 </div>
