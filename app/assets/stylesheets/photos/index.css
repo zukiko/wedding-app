@@ -6,13 +6,8 @@
   padding: 40px 0;
 }
 .photo-container {
-  width: 60%;
+  width: 100%;
   margin: 0 auto;
-  background-color: rgba(241, 233, 239, 0.733);
-}
-.owl-carousel {
-  display: flex;
-  justify-content: center;
 }
 .items {
   flex-direction: column;
