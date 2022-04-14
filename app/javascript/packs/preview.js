@@ -1,3 +1,5 @@
+// const { $ } = require("@rails/ujs");
+
 if (document.URL.match(/new/)){
   document.addEventListener('DOMContentLoaded', () => {
 

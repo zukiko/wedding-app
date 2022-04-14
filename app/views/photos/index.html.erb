@@ -1,19 +1,27 @@
 <%= javascript_pack_tag 'owl', 'data-turbolinks-track': 'reload' %>
 <%= javascript_pack_tag 'photo', 'data-turbolinks-track': 'reload' %>
 <div class="photo-wrapper">
-  <div class="post-btn">
-    <%= link_to "写真を投稿", new_photo_path, data: {"turbolinks" => false} %>
+  <div class="photo-title">
+    <h1>#みんなの思い出</h1>
   </div>
   <div class="photo-container">
-  
-    <div class="owl-carousel owl-theme owl-loaded" id="photos">
+    <div class="main">
+      <div id="photo-img"><%= image_tag "attendee-message.jpg" %></div>
+      <div id="photo-name"></div>
+      <div id="photo-text"></div>
+    </div>
+    <div class="post-btn">
+    <%= link_to "写真を投稿", new_photo_path, data: {"turbolinks" => false} %>
+    </div>
+    <div class="owl-carousel owl-theme owl-loaded photos">
       <% @photos.each do |photo| %>
-          <div class="photo-img">
-            <%= image_tag photo.image.variant(resize: '300x300') %><br>
-          </div>
-          <%# <div class="photo-text">
-            <%= photo.text %>
-          <%# </div> %>
+        <div class="photo-items">
+          <ul>
+            <li class="item item-img"><%= image_tag photo.image.variant(resize: '300x300') %></li>
+            <li class="item item-name"><%= "#{photo.user.name} 様" %></li>
+            <li class="item item-text"><%= photo.text %></li>
+          </ul>
+        </div>
       <% end %>
     </div>
   </div>

@@ -1,6 +1,6 @@
 class PhotosController < ApplicationController
   def index
-    @photos=Photo.all
+    @photos=Photo.includes(:user)
   end
 
   def new
