@@ -5,7 +5,7 @@
     <%= link_to "写真を投稿", new_photo_path %>
   </div>
   <div class="photo-container">
-    <div class="owl-carousel owl-theme owl-loaded">
+    <div class="owl-carousel owl-theme owl-loaded" id="photos">
       <% @photos.each do |photo| %>
           <div class="photo-img">
             <%= image_tag photo.image.variant(resize: '300x300') %><br>
