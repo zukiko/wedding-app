@@ -1,5 +1,5 @@
 .photo-wrapper {
-  background-image: linear-gradient(-20deg, #f794a4 0%, #fdd6bd 100%);
+  background-image: linear-gradient(to top, #c79081 0%, #dfa579 100%);
   height: 100vh;
 }
 .post-btn {
