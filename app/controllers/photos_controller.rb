@@ -1,6 +1,11 @@
 class PhotosController < ApplicationController
   def index
     @photos=Photo.includes(:user)
+
+    if user_signed_in?
+      gon.current_user_id = current_user.id
+    end
+
   end
 
   def new
@@ -14,6 +19,16 @@ class PhotosController < ApplicationController
     else
       render :new
     end
+  end
+
+  def show
+    @photo=Photo.find(params[:id])
+  end
+
+  def destroy
+    @photo=Photo.find(params[:id])
+    @photo.destroy
+    redirect_to photos_path
   end
 
   private
