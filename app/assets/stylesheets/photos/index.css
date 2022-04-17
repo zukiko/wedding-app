@@ -1,0 +1,78 @@
+.photo-wrapper {
+  font-family: 'Zen Kaku Gothic New', sans-serif;
+  background-color: rgb(153, 133, 100);
+  height: 100vh;
+}
+.photo-container {
+  padding: 0px 130px;
+  color: #fff;
+}
+.photo-title h1 {
+  padding: 30px 0 30px 0;
+  font-size: 20px;
+}
+.post-btn {
+  text-align: center;
+  padding: 20px 0 ;
+  
+}
+.post-btn i {
+  font-size: 35px;
+}
+.photo-items {
+  padding: 30px 0px;
+  
+}
+#photos {
+  border: 2px solid #fff;
+  border-radius: 20px;
+  overflow: hidden;
+  width: auto;
+}
+.photo-items li,
+.lists li {
+  list-style: none;
+}
+.item-text,
+.item-name,
+.list-id,
+.item-id,
+.item-userid,
+.delete-icon {
+  display: none;
+} 
+#photo-img img {
+  width: 100%;
+}
+.photo-main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 70%;
+  margin: 0 auto;
+  display: none;
+}
+.name-text {
+  width: 30%;
+}
+#photo-name {
+  padding: 20px 0 20px 20px;
+  text-align: left;
+  font-size: 20px;
+}
+#photo-text {
+  text-align: left;
+  padding-left: 20px;
+  font-size: 18px;
+}
+#photo-delete i {
+  padding: 20px 0 0 20px;
+  font-size: 35px;
+}
+a {
+  color: black;
+}
+.material-icons {
+  color: #fff;
+}
+

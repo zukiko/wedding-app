@@ -1,0 +1,100 @@
+<%# ヘッダーの部分テンプレートへ遷移 %>
+<%= render "shared/second-header" %>
+<%= link_to "席次表管理画面", rails_admin_path %>
+
+<div class="seatinglists-wrapper">
+  <%= link_to "TOP" , receptions_path,class:"top-btn" %>
+  <div class="table-container">
+    <div class="login-user-table">
+      <% if user_signed_in? %>
+        <%= "#{current_user.name} 様" %>
+        <% @tables.each do |table| %>
+        のお席は<span class="attendee-table"><%= table.table %></span>テーブルです
+        <div class="attendee-message">
+          <ul>
+            <li class="message-card">
+              <%= image_tag "attendee-message.jpg" %>
+            </li>
+            <li class="text">
+              <%= simple_format(table.message) %>
+            </li>
+          </ul>
+        </div>
+        <% end %>
+      <% end %>
+    </div>
+    <div class="takasago">
+      <div class="groom-name">
+        <span class="groom">新郎</span><br>太郎
+      </div>
+      <div class="bride-name">
+        <span class="bride">新婦</span><br>花子
+      </div>
+    </div>
+    <ul>
+      <li class="table" >
+        <div class="table-num">A</div>
+        <div class="seats">
+          <% @Atable_nameLists.each do |list| %>
+            <div class="attendee">
+              <%= "#{list} 様" %>
+            </div>
+          <% end %>
+        </div>
+      </li>
+      <li class="table" >
+        <div class="table-num">B</div>
+        <div class="seats">
+          <% @Btable_nameLists.each do |list| %>
+            <div class="attendee">
+              <%= "#{list} 様" %>
+            </div>
+          <% end %>
+        </div>
+      </li>
+      <li class="table" >
+        <div class="table-num">C</div>
+        <div class="seats">
+          <% @Ctable_nameLists.each do |list| %>
+            <div class="attendee">
+              <%= "#{list} 様" %>
+            </div>
+          <% end %>
+        </div>
+      </li>
+      <li class="table" >
+        <div class="table-num">D</div>
+        <div class="seats">
+          <% @Dtable_nameLists.each do |list| %>
+            <div class="attendee">
+              <%= "#{list} 様" %>
+            </div>
+          <% end %>
+        </div>
+      </li>
+      <li class="table" >
+        <div class="table-num">E</div>
+        <div class="seats">
+          <% @Etable_nameLists.each do |list| %>
+            <div class="attendee">
+              <%= "#{list} 様" %>
+            </div>
+          <% end %>
+        </div>
+      </li>
+      <li class="table" >
+        <div class="table-num">F</div>
+        <div class="seats">
+          <% @Ftable_nameLists.each do |list| %>
+            <div class="attendee">
+              <%= "#{list} 様" %>
+            </div>
+          <% end %>
+        </div>
+      </li>
+    </ul>
+  </div>
+</div>
+
+<%# フッターーの部分テンプレートへ遷移 %>
+<%= render "shared/footer" %>

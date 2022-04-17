@@ -1,0 +1,18 @@
+<%# ヘッダーの部分テンプレートへ遷移 %>
+<%= render "shared/header" %>
+
+<div class="main">
+  <div class="invitation-btn">
+    <%# if user_signed_in? %> 
+      <%#=link_to 'ログアウト', destroy_user_session_path, method: :delete, class: "logout" %>
+    <%# else %>
+      <%= link_to '招待状に回答する', new_user_registration_path, class: "invitation" %>
+    <div class="login-btn">
+      <%= link_to 'ログイン', new_user_session_path, class: "login" %>
+    </div>
+    <%# end%>
+  </div>
+</div>
+
+<%# フッターーの部分テンプレートへ遷移 %>
+<%= render "shared/footer" %>

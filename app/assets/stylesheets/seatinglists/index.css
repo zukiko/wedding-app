@@ -1,0 +1,116 @@
+.seatinglists-wrapper {
+  font-family: 'Noto Serif JP', serif;
+  background-image: linear-gradient(135deg, #fdfcfb 0%, #e2d1c3 100%);
+}
+.takasago {
+  background-image: url("takasago.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  height: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.groom-name {
+  width: 10%;
+  text-align: center;
+  font-size: 21px;
+}
+.groom-name span, 
+.bride-name span {
+  font-size: 15px;
+}
+.bride-name {
+  width: 10%;
+  text-align: center;
+  font-size: 21px;
+}
+.takasago img {
+  width: 100%;
+}
+.table-container ul {
+  display: flex;
+  list-style: none;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  align-items: center;
+}
+.table {
+  height: 180px;
+  background-image: url("table.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  width: 33%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 30px;
+  position: relative;
+}
+.attendee {
+  padding: 20px 0;
+  width: 50%;
+  text-align: center;
+}
+.table img {
+  width: 100%;
+}
+.login-user-table {
+  text-align: center;
+  font-size: 18px;
+  background-color: #fff;
+}
+.login-user-table a {
+  color: black;
+}
+.table-num {
+  font-family: 'Neonderthaw', cursive;
+  font-size: 60px;
+  position: absolute;
+}
+.seats{
+  display: flex;
+  flex-wrap: wrap;
+  width: -webkit-fill-available;
+}
+.attendee-table {
+  font-family: 'Neonderthaw', cursive;
+  font-size: 60px;
+}
+.attendee-message {
+  padding-top: 20px;
+  position: relative;
+}
+.attendee-message::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  box-shadow: 0px 20px 20px 20px #fff ;
+}
+.message-card {
+  width: 50%;
+  border-radius: 50%;
+  position: relative;
+}
+.message-card::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  box-shadow: inset 0px 0px 9px 18px #fff ;
+}
+.message-card img {
+  width: 100%;
+}
+.text {
+  position: absolute;
+  text-align: left;
+  font-family: 'Kaisei Opti', serif;
+}

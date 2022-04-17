@@ -1,0 +1,46 @@
+<%# ヘッダーの部分テンプレートへ遷移 %>
+<%= render "shared/second-header" %>
+
+<%= javascript_pack_tag 'owl', 'data-turbolinks-track': 'reload' %>
+<%= javascript_pack_tag 'photo', 'data-turbolinks-track': 'reload' %>
+<%= include_gon %>
+<div class="photo-wrapper">
+  <div class="photo-container">
+    <div class="photo-title">
+      <h1>#みんなの思い出</h1>
+    </div>
+      <div class="photo-main">
+        <div id="photo-img"><%= image_tag "" %></div>
+        <div class="name-text">
+          <div id="photo-name"></div>
+          <div id="photo-text"></div>
+            <a id="photo-delete" rel="nofollow" data-method="delete">
+              <i class="material-icons delete-icon">delete_outline</i>
+            </a>
+        </div>
+      </div>
+      
+      <div class="post-btn">
+        <%= link_to new_photo_path, data: {"turbolinks" => false} do %>
+        <i class="material-icons">add_a_photo</i>
+        <% end %>
+      </div> 
+
+      <div class="owl-carousel owl-theme owl-loaded" id="photos">
+        <% @photos.each do |photo| %>
+          <div class="photo-items">
+              <ul>
+                <li class="item-img"><%= image_tag photo.image.variant(resize: "300x300!", gravity: "center", crop: "300x300+0+0").processed %></li>
+                <li class="item-name"><%= "#{photo.user.name} 様" %></li>
+                <li class="item-text"><%= photo.text %></li>
+                <li class="item-id"><%= photo.id %></li>
+                <li class="item-userid"><%= photo.user_id %></li>
+              </ul>
+          </div>
+        <% end %>
+      </div>
+  </div>
+</div>
+
+<%# フッターーの部分テンプレートへ遷移 %>
+<%= render "shared/footer" %>

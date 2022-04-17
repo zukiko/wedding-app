@@ -1,0 +1,83 @@
+<div class="invi-wrapper">
+  <div class="invi-container">
+    <div class="invi-top">
+      <h1>WEDDING INVITATION</h1>
+    </div>
+
+    <%= form_with model: @user, url: users_sign_up_confirm_path(@user), local: true do |f| %>
+      <%= render "devise/shared/error_messages", resource: resource %>
+
+      <div class="field">
+        <label class="form-text">いずれかをお選び下さい</label></br>
+          <%= f.radio_button :attendance, "出席" %>
+          <%= f.label :attendance, "ご出席", {value: "出席", style: "display: inline-block;"}%>
+          <%= f.radio_button :attendance, "欠席" %>
+          <%= f.label :attendance, "ご欠席", {value: "欠席", style: "display: inline-block;"}%>
+      </div>
+
+      <div class="field">
+        <label class="form-text">お名前</label></br>
+        <%= f.text_field :name, placeholder: "名前", class: "form-placeholder" %>
+      </div>
+
+      <div class="field">
+        <label class="form-text">お名前 (カナ)</label></br>
+        <%= f.text_field :name_kana, placeholder: "ヤマダ ハナコ", class: "form-placeholder" %>
+      </div>
+
+      <div class="field">
+        <label class="form-text">いずれかをお選び下さい</label></br>
+          <%# #新郎ゲスト %>
+          <%= f.radio_button :bride_groom, "新郎ゲスト" %>
+          <%= f.label :bride_groom, "新郎ゲスト", {value: "新郎ゲスト", style: "display: inline-block;"} %>
+          <%# #新婦ゲスト %>
+          <%= f.radio_button :bride_groom, "新婦ゲスト" %>
+          <%= f.label :bride_groom, "新婦ゲスト", {value: "新婦ゲスト", style: "display: inline-block;"} %>
+      </div>
+
+      <div class="field">
+        <%= f.label :email %><br />
+        <%= f.email_field :email, autofocus: true, autocomplete: "email", class: "form-placeholder" %>
+      </div>
+
+      <div class="field">
+        <label class="form-text">郵便番号</label></br>
+        <%= f.text_field :postal_code, placeholder: "123-4567", class: "form-placeholder" %>
+      </div>
+      <div class="field">
+        <label class="form-text">ご住所</label></br>
+        <%= f.text_field :prefecture_code, placeholder: "〇〇県", class: "form-placeholder" %>
+        <%= f.text_field :city, placeholder: "〇〇市XX区", class: "form-placeholder" %></br>
+        <%= f.text_field :address, placeholder: "XXXX町1-2-3", class: "form-placeholder"%>
+        <%= f.text_field :building, placeholder: "〇〇マンション 707", class: "form-placeholder" %>
+      </div>
+
+      <div class="field" id="password">
+        <%= f.label :password %>
+        <% if @minimum_password_length %>
+        <em>(<%= @minimum_password_length %> characters minimum)</em>
+        <% end %><br />
+        <%= f.password_field :password, autocomplete: "new-password", class: "form-placeholder" %>
+      </div>
+
+      <div class="field" id="password">
+        <%= f.label :password_confirmation %><br />
+        <%= f.password_field :password_confirmation, autocomplete: "new-password", class: "form-placeholder" %>
+      </div>
+
+      <div class="field">
+        <label class="form-text">アレルギーなどございましたらご記入ください</label></br>
+        <%= f.text_area :allergy, placeholder: "卵、えび、かになど", class: "form-placeholder" %>
+      </div>
+
+      <div class="field">
+        <label class="form-text">バスのご利用</label></br>
+        <%= f.text_area :bus %>
+      </div>
+
+      <div class="actions">
+        <%= f.submit "確認する" %>
+      </div>
+    <% end %>
+  </div>
+</div>
