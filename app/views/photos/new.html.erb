@@ -1,3 +1,6 @@
+<%# ヘッダーの部分テンプレートへ遷移 %>
+<%= render "shared/second-header" %>
+
 <%= javascript_pack_tag 'preview', 'data-turbolinks-track': 'reload' %>
 <div class="photo-wrapper">
   <div class="post-area">
@@ -12,3 +15,6 @@
       <% end %>
   </div>
   </div>
+
+  <%# フッターーの部分テンプレートへ遷移 %>
+<%= render "shared/footer" %>
