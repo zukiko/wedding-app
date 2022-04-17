@@ -1,50 +1,78 @@
 .photo-wrapper {
-  /* background-image: linear-gradient(to top, #c79081 0%, #dfa579 100%); */
-  font-family: 'Kaisei Opti', serif;
-  
-}
-.photo-title h1 {
-  padding: 30px 0 30px 30px;
+  font-family: 'Zen Kaku Gothic New', sans-serif;
+  background-color: rgb(153, 133, 100);
+  height: 100vh;
 }
 .photo-container {
-  padding: 80px 0;
-  background-image: url("background-img6.jpg");
-  background-repeat: repeat-x;
-  
+  padding: 0px 130px;
+  color: #fff;
+}
+.photo-title h1 {
+  padding: 30px 0 30px 0;
+  font-size: 20px;
 }
 .post-btn {
   text-align: center;
-  padding-top: 20px;
+  padding: 20px 0 ;
+  
+}
+.post-btn i {
+  font-size: 35px;
 }
 .photo-items {
   padding: 30px 0px;
+  
 }
-.photos {
+#photos {
   border: 2px solid #fff;
   border-radius: 20px;
   overflow: hidden;
   width: auto;
-  margin: 20px 60px 95px 60px;
-  background-image: linear-gradient(to top, #e6b980 0%, #eacda3 100%);
 }
-.photo-items li {
+.photo-items li,
+.lists li {
   list-style: none;
 }
 .item-text,
-.item-name {
+.item-name,
+.list-id,
+.item-id,
+.item-userid,
+.delete-icon {
   display: none;
 } 
 #photo-img img {
   width: 100%;
 }
-#photo-img {
-  width: 40%;
+.photo-main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 70%;
   margin: 0 auto;
-  
+  display: none;
+}
+.name-text {
+  width: 30%;
 }
 #photo-name {
-  padding: 20px 0 20px 0;
+  padding: 20px 0 20px 20px;
+  text-align: left;
+  font-size: 20px;
 }
-.main {
-  text-align: center;
+#photo-text {
+  text-align: left;
+  padding-left: 20px;
+  font-size: 18px;
 }
+#photo-delete i {
+  padding: 20px 0 0 20px;
+  font-size: 35px;
+}
+a {
+  color: black;
+}
+.material-icons {
+  color: #fff;
+}
+

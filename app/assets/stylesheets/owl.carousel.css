@@ -7,6 +7,7 @@
  *  Owl Carousel - Core
  */
 .owl-carousel {
+  /* transform: rotate(90deg); 垂直スライダーに変更 */
   display: none;
   width: 100%;
   -webkit-tap-highlight-color: transparent;
@@ -15,7 +16,7 @@
   z-index: 1; }
   .owl-carousel .owl-stage {
     position: relative;
-    -ms-touch-action: pan-Y;
+    -ms-touch-action: pan-y;
     touch-action: manipulation;
     -moz-backface-visibility: hidden;
     /* fix firefox animation glitch */ }
@@ -29,6 +30,7 @@
   .owl-carousel .owl-stage-outer {
     position: relative;
     overflow: hidden;
+    
     /* fix for flashing background */
     -webkit-transform: translate3d(0px, 0px, 0px); }
   .owl-carousel .owl-wrapper,
@@ -40,6 +42,7 @@
     -moz-transform: translate3d(0, 0, 0);
     -ms-transform: translate3d(0, 0, 0); }
   .owl-carousel .owl-item {
+    /* transform: rotate(-90deg); 画像を垂直スライダーに変更 */
     position: relative;
     min-height: 1px;
     float: left;

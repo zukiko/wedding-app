@@ -1,0 +1,15 @@
+<div class="photo-wrapper">
+  写真の詳細ページ<br>
+  <i class="material-icons">face</i><br>
+
+  <%= image_tag @photo.image.variant(resize: "300x300").processed %>
+  <%= @photo.user.name %>
+  <%= @photo.text %>
+
+  <div class="delete-btn">
+    <%= link_to photo_path(@photo.id),method: :delete do %> 
+      <i class="material-icons">delete_outline</i>
+    <% end %> 
+  </div>
+
+</div>
