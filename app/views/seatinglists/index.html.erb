@@ -1,4 +1,5 @@
-※座席表ページ
+<%# ヘッダーの部分テンプレートへ遷移 %>
+<%= render "shared/second-header" %>
 <%= link_to "席次表管理画面", rails_admin_path %>
 
 <div class="seatinglists-wrapper">
@@ -94,3 +95,6 @@
     </ul>
   </div>
 </div>
+
+<%# フッターーの部分テンプレートへ遷移 %>
+<%= render "shared/footer" %>

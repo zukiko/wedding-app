@@ -3,14 +3,14 @@
 
 <div class="main">
   <div class="invitation-btn">
-    <% if user_signed_in? %>
-      <%= link_to 'ログアウト', destroy_user_session_path, method: :delete, class: "logout" %>
-    <% else %>
+    <%# if user_signed_in? %> 
+      <%#=link_to 'ログアウト', destroy_user_session_path, method: :delete, class: "logout" %>
+    <%# else %>
       <%= link_to '招待状に回答する', new_user_registration_path, class: "invitation" %>
     <div class="login-btn">
       <%= link_to 'ログイン', new_user_session_path, class: "login" %>
     </div>
-    <% end%>
+    <%# end%>
   </div>
 </div>
 
