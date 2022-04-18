@@ -8,4 +8,20 @@
       <li><%= link_to 'ログイン', new_user_session_path, class: "login" %></li>
     <% end%>
   </ul>
+
+  <nav id="navi">
+    <ul class="nav-menu">
+      <li><%= link_to "PROFILE", "#"%></li>
+      <li><%= link_to "SEATINGLIST",seatinglists_path %></li>
+      <li><%= link_to "MENU", "#"%></li>
+      <li><%= link_to "PHOTO",photos_path %></li>
+    </ul>
+  </nav>
+
+  <div class="toggle-btn">
+    <span></span>
+    <span></span>
+  </div>
+
+  <div id="mask"></div>
 </div>
