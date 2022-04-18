@@ -1,5 +1,6 @@
 .reception-wrapper {
   background-image: linear-gradient(135deg, #fdfcfb 0%, #e2d1c3 100%);
+  padding-top: 70px;
 }
 .reception-container {
   margin: 0 auto;

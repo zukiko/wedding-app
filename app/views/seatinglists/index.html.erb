@@ -1,9 +1,7 @@
 <%# ヘッダーの部分テンプレートへ遷移 %>
 <%= render "shared/second-header" %>
-<%= link_to "席次表管理画面", rails_admin_path %>
 
 <div class="seatinglists-wrapper">
-  <%= link_to "TOP" , receptions_path,class:"top-btn" %>
   <div class="table-container">
     <div class="login-user-table">
       <% if user_signed_in? %>
