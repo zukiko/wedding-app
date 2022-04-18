@@ -1,3 +1,7 @@
 <footer id="footer">
-  <h1>フッターを表示</h1>
+  <%# ログインしてるユーザーが管理者の場合のみ %>
+  <% if current_user.try(:admin?) %>
+    <%= link_to "管理者ログイン", rails_admin_path %>
+  <% end %>
+  <%= link_to "招待状トップ", root_path %>
 </footer>
