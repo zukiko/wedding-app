@@ -1,6 +1,7 @@
 .seatinglists-wrapper {
   font-family: 'Noto Serif JP', serif;
   background-image: linear-gradient(135deg, #fdfcfb 0%, #e2d1c3 100%);
+  padding-top: 70px;
 }
 .takasago {
   background-image: url("takasago.png");
