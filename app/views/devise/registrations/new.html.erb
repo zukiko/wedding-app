@@ -5,12 +5,13 @@
   <div class="invi-container">
     <div class="invi-top">
       <h1>WEDDING INVITATION</h1>
+      <p><span>*</span> は必須項目です</p>
     </div>
 
     <%= form_with model: @user, url: users_sign_up_confirm_path(@user), local: true do |f| %>
 
       <div class="field">
-        <label class="form-text">いずれかをお選び下さい</label>
+        <label class="form-text">いずれかをお選び下さい<span>*</span></label>
           <%# エラーメッセージを入力項目ごとに表示 %>
           <%= render "shared/error_messages", model: @user, attribute: :attendance %>
           <ul class="radio">
@@ -26,21 +27,21 @@
       </div>
 
       <div class="field">
-        <label class="form-text">お名前</label><br>
+        <label class="form-text">お名前<span>*</span></label><br>
         <%# エラーメッセージを入力項目ごとに表示 %>
         <%= render "shared/error_messages", model: @user, attribute: :name %>
         <%= f.text_field :name, placeholder: "名前", class: "form-placeholder" %>
       </div>
 
       <div class="field">
-        <label class="form-text">お名前 (カナ)</label><br>
+        <label class="form-text">お名前 (カナ)<span>*</span></label><br>
         <%# エラーメッセージを入力項目ごとに表示 %>
         <%= render "shared/error_messages", model: @user, attribute: :name_kana %>
         <%= f.text_field :name_kana, placeholder: "ヤマダ ハナコ", class: "form-placeholder" %>
       </div>
 
       <div class="field">
-        <label class="form-text">いずれかをお選び下さい</label><br>
+        <label class="form-text">いずれかをお選び下さい<span>*</span></label><br>
         <%# エラーメッセージを入力項目ごとに表示 %>
         <%= render "shared/error_messages", model: @user, attribute: :bride_groom %>
           <ul class="radio">
@@ -57,21 +58,21 @@
       </div>
 
       <div class="field">
-        <%= f.label :email %><br>
+        <%= f.label :email %><span>*</span><br>
         <%# エラーメッセージを入力項目ごとに表示 %>
         <%= render "shared/error_messages", model: @user, attribute: :email %>
-        <%= f.email_field :email, autofocus: true, autocomplete: "email", class: "form-placeholder" %>
+        <%= f.email_field :email, placeholder:"PC・携帯どちらでも可", autofocus: true, autocomplete: "email", class: "form-placeholder" %>
       </div>
 
       <div class="field">
-        <label class="form-text">郵便番号</label><br>
+        <label class="form-text">郵便番号<span>*</span></label><br>
         <%# エラーメッセージを入力項目ごとに表示 %>
         <%= render "shared/error_messages", model: @user, attribute: :postal_code %>
         <%= f.text_field :postal_code, placeholder: "123-4567", class: "form-placeholder" %>
 
       </div>
       <div class="field">
-        <label class="form-text">ご住所</label><br>
+        <label class="form-text">ご住所<span>*</span></label><br>
         <%= f.text_field :prefecture_code, placeholder: "〇〇県", class: "form-placeholder" %>
         <%= render "shared/error_messages", model: @user, attribute: :prefecture_code %><%# エラーメッセージを入力項目ごとに表示 %>
 

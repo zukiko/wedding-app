@@ -14,8 +14,16 @@
   font-size: 28px;
   padding: 20px;
 }
+.invi-top p {
+  font-size: 12px;
+  color: rgb(206, 68, 68);
+  padding-top: 20px;
+}
 .field {
   margin-bottom: 15px;
+}
+.field span {
+  color: rgb(206, 68, 68);
 }
 .field label {
   font-size: 15px;
