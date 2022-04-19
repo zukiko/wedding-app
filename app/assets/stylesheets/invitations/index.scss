@@ -1,9 +1,20 @@
+.main-img {
+  color: aliceblue;
+  width: 100%;
+  min-height: 100vh;
+  background-size: cover;
+  background-position: center top;
+  background-repeat: no-repeat;
+  background-image: image-url("couple-4615557_1280.png"); 
+  padding: 20px 40px;
+  margin-bottom: 60px;
+}
 a {
   text-decoration: none;
 }
 .invitation-btn {
   text-align: center;
-  font-family: 'Noto Sans JP', sans-serif;
+  font-family: 'Kaisei Opti', serif;
   margin-bottom: 100px;
 }
 .invitation {
