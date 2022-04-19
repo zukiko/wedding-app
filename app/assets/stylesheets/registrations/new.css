@@ -51,7 +51,14 @@ input[type="email"] {
 }
 .form-placeholder:placeholder-shown {
   background-color: transparent;
-
+}
+.radio {
+  display: flex;
+  list-style: none;
+  justify-content: center;
+}
+.radio li {
+  padding: 0 7px;
 }
 #password {
   display: none;

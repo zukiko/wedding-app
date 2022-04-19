@@ -1,0 +1,7 @@
+.alert li {
+  color: rgb(180, 24, 24);
+  list-style: none;
+  font-size: 12px;
+  text-align: center;
+  padding-top: 6px;
+}
