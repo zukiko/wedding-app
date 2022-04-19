@@ -1,0 +1,12 @@
+ja:
+  activerecord:
+    attributes:
+      user:
+        name: お名前
+        name_kana: お名前カナ
+        attendance: 出席または欠席
+        bride_groom: 新郎ゲストまたは新婦ゲスト
+        postal_code: 郵便番号
+        prefecture_code: 都道府県
+        city: 市区町村
+        address : 番地以降
