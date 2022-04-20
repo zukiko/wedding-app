@@ -1,3 +1,6 @@
+<%# ヘッダーの部分テンプレートへ遷移 %>
+<%= render "shared/header" %>
+
 <div class="invi-wrapper">
   <div class="invi-container">
     <div class="invi-top-confirm">
@@ -6,7 +9,7 @@
   <%= form_with model: @user, url: user_registration_path, local: true do |f| %>
     <div class="field">
       <p><label class="form-text">いずれかをお選び下さい</label></br>
-      <%= f.text_field :attendance, value: @user.attendance, readonly: true %></p>
+      <%= f.text_field :attendance, value: @user.attendance, readonly: true, class:"radio-confirm" %></p>
     </div>
     <div class="field">
       <p><label class="form-text">お名前</label></br>

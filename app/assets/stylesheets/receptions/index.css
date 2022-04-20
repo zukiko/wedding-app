@@ -23,7 +23,7 @@
   font-size: 25px;
 }
 .message {
-  text-align: center;
+  text-align: left;
   font-family: 'Noto Serif JP', serif;
   line-height: initial;
   color: rgb(99, 96, 96);
@@ -35,6 +35,7 @@
   padding-bottom: 20px;
   font-size: 22px;
   color: rgb(58, 54, 54);
+  text-align: center;
 }
 .contents {
   font-family: 'Petit Formal Script', cursive;
