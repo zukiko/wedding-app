@@ -30,7 +30,7 @@
         <label class="form-text">お名前<span>*</span></label><br>
         <%# エラーメッセージを入力項目ごとに表示 %>
         <%= render "shared/error_messages", model: @user, attribute: :name %>
-        <%= f.text_field :name, placeholder: "名前", class: "form-placeholder" %>
+        <%= f.text_field :name, placeholder: "名前", class: "form-placeholder"%>
       </div>
 
       <div class="field">
