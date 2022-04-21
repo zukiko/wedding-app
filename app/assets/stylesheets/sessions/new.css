@@ -6,3 +6,19 @@
 .login h2 {
   padding: 20px 0;
 }
+.login-flash-message {
+  color: rgb(180, 24, 24);
+  font-size: 12px;
+  padding-bottom: 10px;
+}
+.sessions-field {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 30px;
+}
+.mail-icon {
+  color: rgb(82, 80, 80);
+  padding-right: 5px;
+  margin-top: 6px;
+}
