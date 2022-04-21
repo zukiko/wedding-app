@@ -1,15 +1,28 @@
-<div class="main-img"></div>
-  <div class="invitation-btn">
-    <%# if user_signed_in? %> 
-      <%#=link_to 'ログアウト', destroy_user_session_path, method: :delete, class: "logout" %>
-    <%# else %>
-      <%= link_to '招待状に回答する', new_user_registration_path, class: "invitation" %>
-    <div class="login-btn">
-      <%= link_to 'ログイン', new_user_session_path, class: "login" %>
+<div class="main-wrapper">
+  <div class="main-img"></div>
+  <div class="main-container">
+      <%# <% if user_signed_in? %> 
+        <%#=link_to 'ログアウト', destroy_user_session_path, method: :delete, class: "logout" %>
+      <%# else %>
+      <%# end %>
+    <%= link_to new_user_registration_path, class:"invi-btn" do %>
+      <p class='invi-text'>招待状に<br>回答する</p>
+    <% end %>
+    <div class="greeting-img fixed-bg">
+      <h2 class="greeting-text" style="word-break: keep-all;">
+      謹啓　皆様にはお健やかにお過ごしのことと
+      お喜び申し上げます
+      このたび私共二人は結婚式を挙げることになりました
+      つきましてはご多用中誠に恐縮ではございますが
+      ささやかな宴を催したいと存じますので
+      ご出席くださいますようご案内申し上げます　敬具<br>
+      2026年6月吉日
+      </h2>
     </div>
-    <%# end%>
+
   </div>
+  <%# フッターーの部分テンプレートへ遷移 %>
+  <%= render "shared/footer" %>
+</div>
 
 
-<%# フッターーの部分テンプレートへ遷移 %>
-<%= render "shared/footer" %>

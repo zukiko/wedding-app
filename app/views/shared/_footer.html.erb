@@ -1,7 +1,16 @@
 <footer id="footer">
-  <%# ログインしてるユーザーが管理者の場合のみ %>
-  <% if current_user.try(:admin?) %>
-    <%= link_to "管理者ログイン", rails_admin_path %>
-  <% end %>
-  <%= link_to "招待状トップ", root_path %>
+  <div class="footer-link">
+    <%# ログインしてるユーザーが管理者の場合のみ %>
+    <% if current_user.try(:admin?) %>
+      <%= link_to "admin", rails_admin_path %>
+      <%= link_to "reception",receptions_path%>
+    <% end %>
+    <%= link_to "invitation", root_path %>
+    <%= link_to 'login', new_user_session_path, class: "login" %>
+  </div>
+
+  <div class="copyright">
+    <p>&copy; weddingpamph</p>
+  </div>
+  
 </footer>
