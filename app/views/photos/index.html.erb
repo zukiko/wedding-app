@@ -1,5 +1,5 @@
 <%# ヘッダーの部分テンプレートへ遷移 %>
-<%= render "shared/second-header" %>
+<%# <%= render "shared/second-header" %> 
 
 <%= javascript_pack_tag 'owl', 'data-turbolinks-track': 'reload' %>
 <%= javascript_pack_tag 'photo', 'data-turbolinks-track': 'reload' %>
@@ -15,12 +15,15 @@
           <div id="photo-name"></div>
           <div id="photo-text"></div>
             <a id="photo-delete" rel="nofollow" data-method="delete">
-              <i class="material-icons delete-icon">delete_outline</i>
+              <i class="material-icons delete-icon" style="color: #20284e;"><span class="material-symbols-outlined">close</span></i>
             </a>
         </div>
       </div>
       
       <div class="post-btn">
+        <%= link_to receptions_path, data: {"turbolinks" => false} do %>
+        <i class="material-icons">home</i>
+        <% end %>
         <%= link_to new_photo_path, data: {"turbolinks" => false} do %>
         <i class="material-icons">add_a_photo</i>
         <% end %>
@@ -40,7 +43,6 @@
         <% end %>
       </div>
   </div>
+  <%# フッターーの部分テンプレートへ遷移 %>
+  <%= render "shared/footer" %>
 </div>
-
-<%# フッターーの部分テンプレートへ遷移 %>
-<%= render "shared/footer" %>
