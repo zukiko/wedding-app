@@ -1,5 +1,6 @@
 <div class="main-wrapper">
   <div class="main-img"></div>
+  <div class="weed-invi">WEEDING INVITATION</div>
   <div class="main-container">
       <%# <% if user_signed_in? %> 
         <%#=link_to 'ログアウト', destroy_user_session_path, method: :delete, class: "logout" %>
@@ -8,6 +9,26 @@
     <%= link_to new_user_registration_path, class:"invi-btn" do %>
       <p class='invi-text'>招待状に<br>回答する</p>
     <% end %>
+    
+    <div class="name-date">
+      <div class="invi-name">
+        <ul class="groom">
+          <li class="gr-img">
+            <%= image_tag "groom-img.jpg"%>
+          </li>
+          <li class="gr-name">Taro</li>
+        </ul>
+
+        <ul class="bride">
+          <li class="br-name">Hanako</li>
+          <li class="br-img">
+            <%= image_tag "bride-img.jpg" %>
+          </li>
+        </ul>
+      </div>
+
+    </div>
+    
     <div class="greeting-img fixed-bg">
       <h2 class="greeting-text" style="word-break: keep-all;">
       謹啓　皆様にはお健やかにお過ごしのことと
