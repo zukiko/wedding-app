@@ -1,21 +1,70 @@
 .main-wrapper {
   background-color: #e0d7ca;
+  // background-image: linear-gradient(135deg, #fdfcfb 0%, #e2d1c3 100%);
+  padding-top: 35px;
+
 }
 .main-img {
   color: aliceblue;
-  width: 100%;
-  min-height: 100vh;
+  height: 500px;
   background-size: cover;
   background-position: center top;
   background-repeat: no-repeat;
-  background-image: image-url("main-img.jpg"); 
+  background-image: image-url("main-img.jpg");
+  margin: 0 35px;
+}
+.weed-invi {
+  position: absolute;
+    top: 250px;
+    background-color: #f5be4899;
+    width: 100%;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Josefin Slab', serif;
+    font-size: 2.3rem;
+}
+
+.gr-img,
+.br-img {
+  width: 20%;
+}
+.gr-name,
+.br-name {
+  z-index: 10;
+  width: 8%;
+  font-family: 'WindSong', cursive;
+  font-size: 1.8rem;
+}
+.gr-img img,
+.br-img img {
+  border-radius: 50%;
+  width: 180px;
+  height: 180px;
+  object-fit: cover;
+}
+.invi-name {
+}
+.groom {
+  display: flex;
+  align-items: center;
+  justify-content: left;
+}
+.bride {
+  display: flex;
+  align-items: center;
+  justify-content: right;
+}
+li {
+  list-style: none;
 }
 a {
   text-decoration: none;
 }
 .main-container {
   font-family: 'Noto Serif JP', serif;
-  padding-top: 70px;
+  padding-top: 35px;
   padding-bottom: 500px;
 }
 .invi-btn {

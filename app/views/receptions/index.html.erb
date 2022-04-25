@@ -3,7 +3,13 @@
 
 <div class="reception-wrapper">
   <div class="reception-container">
-    <h1>Wedding Reception</h1>
+
+    <div class="title-img">
+      <%= image_tag "recep-title.jpg" %>
+      <div class="title">Wedding Reception</div>
+    </div>
+    
+    
     <div class="reception-date">
       <p>Taro & Hanako</p>
       <p id="date">2026.06.06 Sat</p>
@@ -36,8 +42,8 @@
       </ul>
     </div>
   </div>
+  <%# フッターーの部分テンプレートへ遷移 %>
+  <%= render "shared/footer" %>
 </div>
 
-<%# フッターーの部分テンプレートへ遷移 %>
-<%= render "shared/footer" %>
 
