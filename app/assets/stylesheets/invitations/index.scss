@@ -160,7 +160,7 @@ a {
 }
 
 .greeting-img {
-  background: linear-gradient(rgba(224, 221, 221, 0.6), rgba(224, 221, 221, 0.6)), url(/assets/greeting-img3-80ebe594cea0c2368559e53336bd80efdcf964942235c9de25dbba60f92c4fd7.jpg);
+  background: linear-gradient(rgba(224, 221, 221, 0.6), rgba(224, 221, 221, 0.6)), url("greeting-img3.jpg");
   position: relative;
 }
 
@@ -174,7 +174,7 @@ a {
 .invi-info {
   margin: 0 auto;
   width: 55%;
-  background-image: linear-gradient(rgba(224, 221, 221, 0.6), rgba(224, 221, 221, 0.6)), url(/assets/invi-bg-907510b43172bd6826d5089537127742647ffc733b3120745f4b0703c0eaf315.jpg);
+  background-image: linear-gradient(rgba(224, 221, 221, 0.6), rgba(224, 221, 221, 0.6)), url("invi-info.jpg");
   background-position: center;
   background-repeat: no-repeat;
 }
