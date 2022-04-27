@@ -1,15 +1,44 @@
 .photo-wrapper {
-  font-family: 'Noto Sans JP', sans-serif;
-  background-color: #e0d7ca;
-  height: 100vh;
+  font-family: 'Noto Serif JP', serif;
+  background-image: linear-gradient(135deg, #fdfcfb 0%, #e2d1c3 100%);
 }
 .photo-container {
-  padding: 20px 130px;
-  color: #20284e;
+  padding: 60px 130px;
+  color: #000;
 }
 .photo-title h1 {
   padding: 30px 0 30px 0;
-  font-size: 20px;
+  font-size: 1.2rem;
+  position: relative;
+  padding: 15px 0 15px 30px;
+  border-bottom: 2px solid #000;
+  border-left: 2px solid #000;
+  border-radius: 0 0 0 20px;
+  width: 40%;
+  margin-bottom: 25px;
+  margin-left: 60px;
+}
+.photo-title h1::before {
+  position: absolute;
+  right: 50px;
+  bottom: -21px;
+  width: 0;
+  height: 0;
+  content: '';
+  border-width: 21px 21px 0 0;
+  border-style: solid;
+  border-color: #000 transparent transparent transparent;
+}
+.photo-title h1::after {
+  position: absolute;
+  right: 54px;
+  bottom: -14px;
+  width: 0;
+  height: 0;
+  content: '';
+  border-width: 14px 14px 0 0;
+  border-style: solid;
+  border-color: #f5efe9 transparent transparent transparent;
 }
 .post-btn {
   text-align: center;
@@ -24,7 +53,7 @@
   
 }
 #photos {
-  border: 2px solid #20284e;
+  border: 2px solid #000;
   border-radius: 20px;
   overflow: hidden;
   width: auto;
@@ -41,6 +70,9 @@
 .delete-icon {
   display: none;
 } 
+#photo-img {
+  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.3);
+}
 #photo-img img {
   width: 100%;
 }
@@ -74,7 +106,7 @@ a {
   color: black;
 }
 .material-icons {
-  color: #20284e;
+  color: #504c4c;
   
 }
 

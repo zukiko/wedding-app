@@ -1,3 +1,7 @@
+<%= javascript_pack_tag 'owl', 'data-turbolinks-track': 'reload' %>
+<%= javascript_pack_tag 'reception_index', 'data-turbolinks-track': 'reload' %>
+
+
 <%# ヘッダーの部分テンプレートへ遷移 %>
 <%= render "shared/second-header" %>
 
@@ -28,17 +32,14 @@
       ゆっくりとお過ごしいただければ幸いです<br>
       太郎 花子</p>
     </div>
-    <div class="scr-photo">
-      <ul>
-        <li><%=image_tag "img1.jpg" %></li>
-        <li><%=image_tag "img2.jpg" %></li>
-        <li><%=image_tag "img3.jpg" %></li>
-        <li><%=image_tag "img4.jpg" %></li>
-        <li><%=image_tag "img5.jpg" %></li>
-        <li><%=image_tag "img6.jpg" %></li>
-      </ul>
+    <div class="owl-carousel scr-photo">
+      <%=image_tag "img1.jpg" %>
+      <%=image_tag "img2.jpg" %>
+      <%=image_tag "img3.jpg" %>
+      <%=image_tag "img4.jpg" %>
+      <%=image_tag "img5.jpg" %>
+      <%=image_tag "img6.jpg" %>
     </div>
-    ※２人の写真を横に並べる→スクロールできるように
     
     <div class="contents">
       <ul>
