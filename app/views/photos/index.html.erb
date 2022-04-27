@@ -34,7 +34,7 @@
             <% @photos.each do |photo| %>
               <div class="photo-items">
                   <ul>
-                    <li class="item-img"><%= image_tag photo.image.variant(resize: "300x300!", gravity: "center", crop: "300x300+0+0").processed if photo.image.attached? %></li>
+                    <li class="item-img"><%= image_tag photo.image.variant(resize: "300x300!", gravity: "center", crop: "300x300+0+0").processed %></li>
                     <li class="item-name"><%= "#{photo.user.name} 様" %></li>
                     <li class="item-text"><%= photo.text %></li>
                     <li class="item-id"><%= photo.id %></li>
