@@ -1,7 +1,7 @@
 .seatinglists-wrapper {
   font-family: 'Noto Serif JP', serif;
   background-image: linear-gradient(135deg, #fdfcfb 0%, #e2d1c3 100%);
-  padding-top: 70px;
+  padding-top: 75px;
 }
 .takasago {
   background-image: url("takasago.png");
@@ -13,19 +13,16 @@
   justify-content: center;
   align-items: center;
 }
-.groom-name {
-  width: 10%;
-  text-align: center;
-  font-size: 21px;
-}
 .groom-name span, 
 .bride-name span {
   font-size: 15px;
 }
+.groom-name,
 .bride-name {
   width: 10%;
   text-align: center;
   font-size: 21px;
+  line-height: initial;
 }
 .takasago img {
   width: 100%;

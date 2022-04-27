@@ -1,13 +1,12 @@
 <%# ヘッダーの部分テンプレートへ遷移 %>
-<%= render "shared/header" %>
+<%# <%= render "shared/header" %> 
 
 <div class="invi-wrapper">
   <div class="invi-container">
     <div class="invi-top">
       <h1>WEDDING INVITATION</h1>
-      <p><span>*</span> は必須項目です</p>
     </div>
-
+    <p><span>*</span> は必須項目です</p>
     <%= form_with model: @user, url: users_sign_up_confirm_path(@user), local: true do |f| %>
 
       <div class="field">
@@ -109,6 +108,9 @@
       </div>
 
       <div class="actions">
+        <%= link_to root_path do %>
+          <i class="material-icons">arrow_back</i>
+        <% end %>
         <%= f.submit "確認する" %>
       </div>
     <% end %>

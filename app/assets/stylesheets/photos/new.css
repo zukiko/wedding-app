@@ -1,8 +1,29 @@
 .post-area {
   text-align: center;
-  padding-top: 40px;
+  padding: 180px 200px 216px 150px;
 }
 .new-img{
   width: 400px;
   object-fit: cover;
+}
+.img-textarea {
+  width: 50%;
+  height: 100px;
+  margin: 20px 0;
+}
+.submit {
+  border: none;
+  background-color: #eee6de;
+}
+.image_input_btn {
+  display: block;
+  width: 180px;
+  margin: 0 auto;
+  padding-top: 5px;
+}
+.click-upload i {
+  font-size: 1.9rem;
+}
+input[type="file"] {
+  opacity: 0;
 }

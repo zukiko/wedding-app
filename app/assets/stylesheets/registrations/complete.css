@@ -1,0 +1,24 @@
+.complete h1 {
+  font-size: 1rem;
+  color: #000;
+  padding-bottom: 40px;
+}
+.complete {
+  padding: 60px 0;
+}
+.complete-wrapper {
+  height: 100vh;
+}
+.complete-container {
+  height: 400px;
+}
+.back-btn {
+  font-size: 0.8rem;
+  background-color: #bf9288;
+    border: none;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    color: #fff;
+    padding: 10px;
+}

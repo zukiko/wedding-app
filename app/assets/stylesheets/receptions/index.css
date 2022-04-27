@@ -1,52 +1,59 @@
 .reception-wrapper {
   background-image: linear-gradient(135deg, #fdfcfb 0%, #e2d1c3 100%);
-  padding-top: 70px;
+  padding-top: 130px;
 }
 .title-img {
-  width: 65%;
-  
-}
-.title-img img {
-  width: 100%;
+  display: flex;
+  justify-content: center;
+  height: 400px;
 }
 .title {
-  font-family: 'WindSong', cursive;
-  text-align: center;
-  font-size: 45px;
-  padding: 30px 0;
-  
-}
-
-.reception-container {
-  margin: 0 auto;
-  color: rgb(58, 54, 54);
+  font-size: 1.8rem;
+  padding: 20px;
+  z-index: 5;
+  background-image: url("recep-title.jpg");
+  background-position: center;
+  background-size: cover;
+  width: 40%;
+  border-top-left-radius: 40px;
+  color: #fff;
 }
 .reception-date {
-  font-family: 'WindSong', cursive;
-  text-align: center;
-  font-size: 33px;
+  text-align: start;
+  font-size: 3.3rem;
   line-height: initial;
+  width: 27%;
+  padding-left: 5px;
+  background-color: #ddc8c1;
+  border-top-right-radius: 40px;
 }
-#date {
-  font-size: 25px;
+.reception-container {
+  color: rgb(58, 54, 54);
+  font-family: 'Petit Formal Script', cursive;
 }
 .message {
-  text-align: left;
-  font-family: 'Noto Serif JP', serif;
-  line-height: initial;
+  text-align: start;
+  line-height: 2;
   color: rgb(99, 96, 96);
-  padding-top: 20px;
+  background-image: linear-gradient(rgba(224, 221, 221, 0.6), rgba(224, 221, 221, 0.6)), url("message.jpg");
+  margin-top: 60px;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.message p {
+  font-family: 'Noto Serif JP', serif;
+  color: #363333;
+  padding: 0 200px 130px 250px;
+  width: 60%;
 }
 
 .message h2 {
-  font-family: 'Petit Formal Script', cursive;
   padding-bottom: 20px;
   font-size: 22px;
   color: rgb(58, 54, 54);
   text-align: center;
 }
 .contents {
-  font-family: 'Petit Formal Script', cursive;
   font-size: 22px;
   text-align: center;
 }

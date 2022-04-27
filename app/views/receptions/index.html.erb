@@ -1,3 +1,7 @@
+<%= javascript_pack_tag 'owl', 'data-turbolinks-track': 'reload' %>
+<%= javascript_pack_tag 'reception_index', 'data-turbolinks-track': 'reload' %>
+
+
 <%# ヘッダーの部分テンプレートへ遷移 %>
 <%= render "shared/second-header" %>
 
@@ -5,15 +9,13 @@
   <div class="reception-container">
 
     <div class="title-img">
-      <%= image_tag "recep-title.jpg" %>
-      <div class="title">Wedding Reception</div>
+      <div class="title">Wedding<br>Reception</div>
+      <ul class="reception-date">
+        <li>Taro<br>&<br>Hanako</li>
+        <li>2026<br>0606<br>Sat.</li>
+      </ul>
     </div>
-    
-    
-    <div class="reception-date">
-      <p>Taro & Hanako</p>
-      <p id="date">2026.06.06 Sat</p>
-    </div>
+
     <div class="message">
       <h2>THANKS</h2>
       <p style="word-break: keep-all;">
@@ -22,16 +24,22 @@
       この日を迎えることができますのも
       ひとえに皆様のお力添えのおかげと
       厚く御礼申し上げます
-      未熟な二人ですが　手を取り合い
+      未熟な二人ですが 手を取り合い
       ともに歩んでいきたいと思います
       今後とも末永いご指導とお付き合いのほど
       何卒よろしくお願いいたします
       本日はお食事を楽しみながら
       ゆっくりとお過ごしいただければ幸いです<br>
-      太郎　花子</p>
+      太郎 花子</p>
     </div>
-
-    ※２人の写真を横に並べる→スクロールできるように
+    <div class="owl-carousel scr-photo">
+      <%=image_tag "img1.jpg" %>
+      <%=image_tag "img2.jpg" %>
+      <%=image_tag "img3.jpg" %>
+      <%=image_tag "img4.jpg" %>
+      <%=image_tag "img5.jpg" %>
+      <%=image_tag "img6.jpg" %>
+    </div>
     
     <div class="contents">
       <ul>
