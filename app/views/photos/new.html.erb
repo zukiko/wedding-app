@@ -6,15 +6,17 @@
   <div class="post-area">
       <%= form_with model: @photo, url: photos_path, local: true do |f| %>
         <div class="click-upload">
-          <p>投稿</p>
-          <%= f.file_field :image, id:"item-image" %>
+          <%= f.label :image, class:"image_input_btn" do %>
+            <i class="material-icons">add_a_photo</i>
+            <%= f.file_field :image, id:"item-image" %>
+          <% end %>
         </div>
         <div id="new-image"></div>
-        <%= f.text_area :text %><br>
-        <%= f.submit "シェア" %>
+        <%= f.text_area :text, class:"img-textarea" %><br>
+        <%= f.submit "シェア",class:"submit" %>
       <% end %>
   </div>
-  </div>
-
   <%# フッターーの部分テンプレートへ遷移 %>
-<%= render "shared/footer" %>
+  <%= render "shared/footer" %>
+</div>
+

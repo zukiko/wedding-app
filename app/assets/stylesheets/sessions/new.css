@@ -1,10 +1,39 @@
-.login h1 {
-  font-family: 'WindSong', cursive;
-  font-size: 32px;
-  padding: 20px 0;
+.sign-in {
+  background-color: #ddc8c18c;
+  display: block;
+  position: relative;
+  margin: 0 auto;
+  padding: 50px 0;
+  width: 300px;
+  font-family: 'Noto Serif JP', serif;
 }
-.login h2 {
+
+.sign-in h1 {
+  font-family: 'Josefin Slab', serif;
+  display: inline-block;
+  position: relative;
+  box-sizing: border-box;
+  padding: 10px;
+  margin: 0 0 0 -20px;
+  width: calc(100% + 35px);
+  font-size: 22px;
+  color: #686464;
+  background: #edc87afa;
+  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.3);
+
+}
+.sign-in h1::after {
+  position: absolute;
+  content: '';
+  top: 100%;
+  left: 0;
+  border: none;
+  border-bottom: solid 15px transparent;
+  border-right: solid 20px #e9b340;
+}
+.sign-in h2 {
   padding: 20px 0;
+  font-size: 0.7rem;
 }
 .login-flash-message {
   color: rgb(180, 24, 24);
@@ -18,7 +47,16 @@
   padding-bottom: 30px;
 }
 .mail-icon {
-  color: rgb(82, 80, 80);
+  color: #686464;
   padding-right: 5px;
   margin-top: 6px;
+}
+input[type="submit"] {
+  background-color: #bf9288;
+  border: none;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  color: #fff;
+  font-size: 0.6rem;
 }

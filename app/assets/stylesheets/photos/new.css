@@ -1,8 +1,35 @@
 .post-area {
   text-align: center;
-  padding-top: 40px;
+  padding: 180px 200px 216px 150px;
 }
 .new-img{
   width: 400px;
   object-fit: cover;
+}
+.img-textarea {
+  width: 50%;
+  height: 100px;
+  margin: 20px 0;
+}
+.submit {
+  border: none;
+  background-color: #eee6de;
+}
+.image_input_btn {
+  display: block;
+  background-color: #ddc8c1;
+  width: 90px;
+  margin: 0 auto;
+  height: 90px;
+  border-radius: 50%;
+  padding-top: 2px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.click-upload i {
+  margin-left: 30px;
+}
+input[type="file"] {
+  opacity: 0;
 }
