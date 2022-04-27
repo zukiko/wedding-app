@@ -1,9 +1,6 @@
 class PhotosController < ApplicationController
   def index
     @photos=Photo.includes(:user)
-    if !@photos
-      @photos = nil
-    end
 
     if user_signed_in?
       gon.current_user_id = current_user.id
