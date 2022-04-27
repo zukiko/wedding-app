@@ -17,18 +17,12 @@
 }
 .image_input_btn {
   display: block;
-  background-color: #ddc8c1;
-  width: 90px;
+  width: 180px;
   margin: 0 auto;
-  height: 90px;
-  border-radius: 50%;
-  padding-top: 2px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  padding-top: 5px;
 }
 .click-upload i {
-  margin-left: 30px;
+  font-size: 1.9rem;
 }
 input[type="file"] {
   opacity: 0;

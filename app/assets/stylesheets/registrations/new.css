@@ -1,23 +1,68 @@
 .invi-wrapper {
-  min-height: 100vh;
   text-align: center;
   font-family: 'Noto Serif JP', serif;
   background-image: linear-gradient(135deg, #fdfcfb 0%, #e2d1c3 100%);
   color: rgb(58, 54, 54);
+  padding: 20px 0;
 }
 .invi-container {
-  width: 400px;
+  display: block;
+  position: relative;
   margin: 0 auto;
+  padding: 10px 0;
+  width: 380px;
+  background: #ddc8c18c;
+  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.14);
+  box-sizing: border-box;
 }
 .invi-top {
   font-family: 'Josefin Slab', serif;
   font-size: 28px;
-  padding: 20px;
+  padding: 10px;
+  position: absolute;
+  top: -6px;
+  right: -6px;
+  width: 124px;
+  height: 128px;
+  overflow: hidden;
 }
-.invi-top p {
-  font-size: 12px;
+.invi-top h1 {
+  display: inline-block;
+  position: absolute;
+  padding: 7px 0;
+  left: -23px;
+  top: 20px;
+  width: 191px;
+  text-align: center;
+  font-size: 18px;
+  line-height: 16px;
+  background: #6496ab;
+  color: #fff;
+  letter-spacing: 0.05em;
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  padding-left: 10px;
+}
+.invi-top h1::before,
+.invi-top h1::after {
+  position: absolute;
+  content: "";
+  border-top: 5px solid #355f70;
+  border-left: 4px solid transparent;
+  border-right: 4px solid transparent;
+  bottom: -4px;
+}
+.invi-top h1::before {
+  left: 14px;
+}
+.invi-top h1::after {
+  right: -1px;
+}
+.invi-container p {
+  font-size: 0.5rem;
   color: rgb(206, 68, 68);
-  padding-top: 20px;
+  padding: 20px 0;
 }
 .field {
   margin-bottom: 15px;
@@ -70,4 +115,12 @@ input[type="email"] {
 }
 #password {
   display: none;
+}
+.actions {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.actions i {
+  padding-right: 10px;
 }
