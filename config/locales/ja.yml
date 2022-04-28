@@ -10,3 +10,6 @@ ja:
         prefecture_code: 都道府県
         city: 市区町村
         address : 番地以降
+      photo:
+        text: メッセージ
+        image: 画像
