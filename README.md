@@ -1,24 +1,50 @@
-# README
+#  テーブル設計
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## users テーブル
 
-Things you may want to cover:
+| Column             | Type    | Options                  |
+| ------------------ | ------- | -------------------------|
+| attendance         | string  | null: false              |
+| bride_groom        | string  | null: false              |
+| name               | string  | null: false              |
+| name_kana          | string  | null: false              |
+| postal_code        | string  | null: false              |
+| prefecture_code    | string  | null: false              |
+| city               | string  | null: false              |
+| address            | string  | null: false              |
+| building           | string  |                          |
+| allergy            | text    |                          |
+| bus                | text    |                          |
+| email              | string  | null: false,unique: true |
+| admin              | boolean | default: false           |
 
-* Ruby version
 
-* System dependencies
+### Association
 
-* Configuration
+- has_one :seating_list
+- has_many :photos
 
-* Database creation
+## seatinglists テーブル
 
-* Database initialization
+| Column           | Type       | Options                        |
+| ---------------- | ---------- | ------------------------------ |
+| table            | string     | null: false                    |
+| seat_number      | integer    | null: false                    |
+| message          | text       |                                |
+| user             | references | null: false, foreign_key: true |
 
-* How to run the test suite
+### Association
 
-* Services (job queues, cache servers, search engines, etc.)
+- belongs_to :user
 
-* Deployment instructions
 
-* ...
+## photos テーブル
+
+| Column     | Type       | Options                        |
+| ---------- | ---------- | ------------------------------ |
+| user       | references | null: false, foreign_key: true |
+| text       | text       | null: false                    |
+
+### Association
+
+- belongs_to :user
