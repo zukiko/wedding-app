@@ -76,6 +76,7 @@
 .attendee-table {
   font-family: 'Neonderthaw', cursive;
   font-size: 60px;
+  padding: 0 5px;
 }
 .attendee-message {
   padding-top: 20px;
