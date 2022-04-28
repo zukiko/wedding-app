@@ -3,14 +3,14 @@
 class DeviseCreateUsers < ActiveRecord::Migration[6.0]
   def change
     create_table :users do |t|
-      t.string :attendance,              null: false
-      t.string :bride_groom,              null: false
-      t.string :name,              null: false
-      t.string :name_kana,              null: false
-      t.string :postal_code,      null: false
-      t.string :prefecture_code,      null: false
-      t.string :city,          null: false
-      t.string :address,       null: false
+      t.string :attendance,         null: false
+      t.string :bride_groom,        null: false
+      t.string :name,               null: false
+      t.string :name_kana,          null: false
+      t.string :postal_code,        null: false
+      t.string :prefecture_code,    null: false
+      t.string :city,               null: false
+      t.string :address,            null: false
       t.string :building
       t.text   :allergy
       t.text   :bus
