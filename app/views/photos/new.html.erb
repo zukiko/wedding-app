@@ -6,12 +6,17 @@
   <div class="post-area">
       <%= form_with model: @photo, url: photos_path, local: true do |f| %>
         <div class="click-upload">
+        <%# エラーメッセージを入力項目ごとに表示 %>
+        <%= render "shared/error_messages", model: @photo, attribute: :image %>
           <%= f.label :image, class:"image_input_btn" do %>
             <i class="material-icons">add_a_photo</i>
             <%= f.file_field :image, id:"item-image" %>
           <% end %>
         </div>
         <div id="new-image"></div>
+
+        <%# エラーメッセージを入力項目ごとに表示 %>
+        <%= render "shared/error_messages", model: @photo, attribute: :text %>
         <%= f.text_area :text, class:"img-textarea" %><br>
         <%= f.submit "シェア",class:"submit" %>
       <% end %>
