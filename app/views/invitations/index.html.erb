@@ -1,3 +1,4 @@
+<%# 招待状トップ画面 %>
 <div class="main-wrapper">
   <div class="main-img"></div>
   <div class="weed-invi">WEEDING INVITATION</div>
@@ -6,10 +7,12 @@
         <%#=link_to 'ログアウト', destroy_user_session_path, method: :delete, class: "logout" %>
       <%# else %>
       <%# end %>
+      
+    <%# WEB招待状回答ボタン %>
     <%= link_to new_user_registration_path, class:"invi-btn" do %>
       <p class='invi-text'>招待状に<br>回答する</p>
     <% end %>
-    
+    <%# //WEB招待状回答ボタン %>
     <div class="name-date">
       <div class="invi-name">
         <ul class="groom">
@@ -88,8 +91,10 @@
         お願いいたします
       </div>
     </div>
-  <%# フッターーの部分テンプレートへ遷移 %>
+  <%# フッターの部分テンプレートへ遷移 %>
   <%= render "shared/footer" %>
 </div>
+<%# //招待状トップ画面 %>
+
 
 
