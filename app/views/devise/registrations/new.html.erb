@@ -1,6 +1,4 @@
-<%# ヘッダーの部分テンプレートへ遷移 %>
-<%# <%= render "shared/header" %> 
-
+<%# WEB招待状入力フォーム %>
 <div class="invi-wrapper">
   <div class="invi-container">
     <div class="invi-top">
@@ -8,7 +6,7 @@
     </div>
     <p><span>*</span> は必須項目です</p>
     <%= form_with model: @user, url: users_sign_up_confirm_path(@user), local: true do |f| %>
-
+      <%# 出欠確認欄 %>
       <div class="field">
         <label class="form-text">いずれかをお選び下さい<span>*</span></label>
           <%# エラーメッセージを入力項目ごとに表示 %>
@@ -24,21 +22,24 @@
             </li>
           </ul>
       </div>
-
+      <%# //出欠確認欄 %>
+      <%# 名前入力 %>
       <div class="field">
         <label class="form-text">お名前<span>*</span></label><br>
         <%# エラーメッセージを入力項目ごとに表示 %>
         <%= render "shared/error_messages", model: @user, attribute: :name %>
         <%= f.text_field :name, placeholder: "名前", class: "form-placeholder"%>
       </div>
-
+      <%# //名前入力欄 %>
+      <%# 名前カナ入力欄 %>
       <div class="field">
         <label class="form-text">お名前 (カナ)<span>*</span></label><br>
         <%# エラーメッセージを入力項目ごとに表示 %>
         <%= render "shared/error_messages", model: @user, attribute: :name_kana %>
         <%= f.text_field :name_kana, placeholder: "ヤマダ ハナコ", class: "form-placeholder" %>
       </div>
-
+      <%# //名前カナ入力欄 %>
+      <%# 新郎または新婦ゲスト選択欄 %>
       <div class="field">
         <label class="form-text">いずれかをお選び下さい<span>*</span></label><br>
         <%# エラーメッセージを入力項目ごとに表示 %>
@@ -55,21 +56,22 @@
               <%= f.label :bride_groom, "新婦ゲスト", {value: "新婦ゲスト", style: "display: inline-block;"} %>
             </li>
       </div>
-
+      <%# //新郎または新婦ゲスト選択欄 %>
+      <%# メールアドレス入力欄 %>
       <div class="field">
         <%= f.label :email %><span>*</span><br>
         <%# エラーメッセージを入力項目ごとに表示 %>
         <%= render "shared/error_messages", model: @user, attribute: :email %>
         <%= f.email_field :email, placeholder:"PC・携帯どちらでも可", autofocus: true, autocomplete: "email", class: "form-placeholder" %>
       </div>
-
       <div class="field">
         <label class="form-text">郵便番号<span>*</span></label><br>
         <%# エラーメッセージを入力項目ごとに表示 %>
         <%= render "shared/error_messages", model: @user, attribute: :postal_code %>
         <%= f.text_field :postal_code, placeholder: "123-4567", class: "form-placeholder" %>
-
       </div>
+      <%# //メールアドレス入力欄 %>
+      <%# 住所入力欄 %>
       <div class="field">
         <label class="form-text">ご住所<span>*</span></label><br>
         <%= f.text_field :prefecture_code, placeholder: "〇〇県", class: "form-placeholder" %>
@@ -83,36 +85,28 @@
 
         <%= f.text_field :building, placeholder: "〇〇マンション 707", class: "form-placeholder" %>
       </div>
-
-      <div class="field" id="password">
-        <%= f.label :password %>
-        <% if @minimum_password_length %>
-        <em>(<%= @minimum_password_length %> characters minimum)</em>
-        <% end %><br />
-        <%= f.password_field :password, autocomplete: "new-password", class: "form-placeholder" %>
-      </div>
-
-      <div class="field" id="password">
-        <%= f.label :password_confirmation %><br>
-        <%= f.password_field :password_confirmation, autocomplete: "new-password", class: "form-placeholder" %>
-      </div>
-
+      <%# //住所入力欄 %>
+      <%# アレルギー入力欄 %>
       <div class="field">
         <label class="form-text">アレルギーなどございましたらご記入ください</label><br>
         <%= f.text_area :allergy, placeholder: "卵、えび、かになど", class: "form-placeholder" %>
       </div>
-
+      <%# //アレルギー入力欄 %>
+      <%# バスの利用有無入力欄 %>
       <div class="field">
         <label class="form-text">バスのご利用</label><br>
         <%= f.text_area :bus %>
       </div>
-
+      <%# //バスの利用有無入力欄 %>
       <div class="actions">
+        <%# 招待状トップ画面へ戻る %>
         <%= link_to root_path do %>
           <i class="material-icons">arrow_back</i>
         <% end %>
+        <%# 入力内容確認画面へ遷移 %>
         <%= f.submit "確認する" %>
       </div>
     <% end %>
   </div>
 </div>
+<%# //WEB招待状入力フォーム %>
