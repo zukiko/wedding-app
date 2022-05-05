@@ -1,8 +1,6 @@
-<%# ヘッダーの部分テンプレートへ遷移 %>
-<%# <%= render "shared/second-header" %> 
-
 <%= javascript_pack_tag 'owl', 'data-turbolinks-track': 'reload' %>
 <%= javascript_pack_tag 'photo', 'data-turbolinks-track': 'reload' %>
+<%# ゲストがログインしている場合はcurrent_user.idを取得するためgonをinclude %>
 <%= include_gon %>
 <div class="photo-wrapper">
   <div class="photo-container">

@@ -1,7 +1,4 @@
 $(document).ready(function () {
-
-  console.log(gon.current_user_id);
-
     // 写真クリック時の処理
     function imageClick(){
 
@@ -66,15 +63,6 @@ $(document).ready(function () {
     autoWidth: false,
     startPosition: 3,
     rewind: true,
-    dots: false,
-    // nav: true,
-    // navText: ['前', '次'],
-    // autoplay: true,
-    // autoplayTimeout: 1000,
-    // autoplayHoverPause: true,
-    // autoplaySpeed: 5000,
-    // navClass: ['owl-prev', 'owl-next'],
-    // navContainerClass: "owl-nav",
-    // navElement: 'div'
+    dots: false
   });
 });

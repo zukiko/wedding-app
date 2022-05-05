@@ -1,4 +1,6 @@
 class SeatinglistsController < ApplicationController
+  before_action :authenticate_user!
+  
   def index
     @lists=SeatingList.includes(:user).order(:table)
     @tables=SeatingList.where(user_id: current_user.id)
