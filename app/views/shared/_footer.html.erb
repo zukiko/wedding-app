@@ -3,12 +3,9 @@
     <%# ログインしてるユーザーが管理者の場合のみ %>
     <% if current_user.try(:admin?) %>
       <%= link_to "admin", rails_admin_path %>
-      <%= link_to "reception",receptions_path%>
-      <%=link_to 'logout', destroy_user_session_path, method: :delete, class: "logout" %>
-
+      <%= link_to "reception", receptions_path%>
+      <%= link_to "invitation", root_path %>
     <% end %>
-    <%= link_to "invitation", root_path %>
-    <%= link_to 'login', new_user_session_path, class: "login" %>
   </div>
 
   <div class="copyright">
