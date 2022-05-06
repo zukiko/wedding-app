@@ -29,33 +29,34 @@ Basic認証
 # 実装機能
 
 ### ・招待状トップ
-<video src="readme/video1.mp4" loop autoplay muted width="400"></video>
+![readme1](https://user-images.githubusercontent.com/100673178/167079424-1ad1eae7-7a7c-4226-b340-b535d205be4b.gif)
 
 ### ・招待状入力機能
 招待状フォームに結婚式への参列有無の回答ができます。入力完了後は、
 回答ありがとうございましたと表示されます。
-<video src="readme/video2.mp4" loop autoplay muted width="400"></video>
+![readme2](https://user-images.githubusercontent.com/100673178/167079431-6a511eb7-f677-47ad-9b4d-1b56de3bbf90.gif)
 
 ### ・結婚式当日のWEBパンフレットログインの流れ
 WEBパンフレットログイン画面よりメールアドレスを入力後、WEBパンフレットページへ
 ログインが可能となります。
-<video src="readme/video3.mp4" loop autoplay muted width="400"></video>
+![readme3](https://user-images.githubusercontent.com/100673178/167079441-513cae31-646f-4ff8-a35b-14733ee77a52.gif)
 
 ### ・席次表ページ
 席次表ページへ遷移後、上部へログインユーザーの名前とテーブル番号、メッセージが表示されます。下部へスクロールすると全体の席次表を表示しています。
-<video src="readme/video4.mp4" loop autoplay muted width="400"></video>
+![readme4](https://user-images.githubusercontent.com/100673178/167079451-55cc4408-4bc8-4bba-b3e5-527f818cb25a.gif)
 
 ### ・写真投稿機能
 写真投稿ボタンをクリック後、写真投稿ページへ遷移し、画像選択、テキスト入力完了後は、送信ボタンを押下すると写真一覧ページへ移動します。  
-<video src="readme/video5.mp4" loop autoplay muted width="400"></video>
+![readme5](https://user-images.githubusercontent.com/100673178/167079457-961ee713-5fde-4f69-81df-a765e5795fe2.gif)
 
 横並び投稿済み写真は手動でスクロールが可能、また、写真をクリックすると非同期でクリックした写真を上部へ表示します。
-<video src="readme/video6.mp4" loop autoplay muted width="400"></video>
+![readme6](https://user-images.githubusercontent.com/100673178/167079661-ff099bbf-d698-4b8c-8e19-659ae6e6028a.gif)
 
 
 ### ・写真削除機能
 ログインユーザー且つ投稿写真の投稿者のみが写真の削除の実行が可能です。  
-<video src="readme/video7.mp4" loop autoplay muted width="400"></video>
+![readme7](https://user-images.githubusercontent.com/100673178/167079669-431b0694-e5c9-4210-8161-e4909dfd83b8.gif)
+
 
 # 実装予定の機能
 - 招待状入力後、確認メールを回答者へ送信  
@@ -66,10 +67,10 @@ WEBパンフレットログイン画面よりメールアドレスを入力後�
 - 食事メニューページ
 
 # ER図
-<img src="readme/er.png" width="400">
+[![ER図](https://i.gyazo.com/23af62be7da381365ab5b3db900f6306.png)](https://gyazo.com/23af62be7da381365ab5b3db900f6306)
 
 # 画面遷移図
-<img src="readme/transition.png" width="400">
+[![画面遷移図](https://i.gyazo.com/e60f5bdc82a6cb839c3b80f61fbd4c72.png)](https://gyazo.com/e60f5bdc82a6cb839c3b80f61fbd4c72)
 
 ### 招待状ページ
 [招待状](https://weddingpamph.herokuapp.com/)
@@ -134,3 +135,5 @@ WEBパンフレットログイン画面よりメールアドレスを入力後�
 - ruby 2.6.5
 - Rails 6.0.0
 - MySQL2 0.4.4
+- Github
+- Visual Studio Code
