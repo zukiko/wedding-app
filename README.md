@@ -27,6 +27,7 @@ Basic認証
 [要件定義シート](https://docs.google.com/spreadsheets/d/1AScIBReq_3MnZccxr85HZuclkoOBhaAY1jD-Ft3wslw/edit#gid=982722306)
 
 # 実装機能
+
 ### ・招待状トップ
 [![Image from Gyazo](https://i.gyazo.com/1d586945cfdd867b0c94aab08f9fafad.gif)](https://gyazo.com/1d586945cfdd867b0c94aab08f9fafad)
 
@@ -47,6 +48,10 @@ WEBパンフレットログイン画面よりメールアドレスを入力後�
 ### ・写真投稿機能
 写真投稿ボタンをクリック後、写真投稿ページへ遷移し、画像選択、テキスト入力完了後は、送信ボタンを押下すると写真一覧ページへ移動します。
 [![Image from Gyazo](https://i.gyazo.com/1c5e5cfeb8cf1bc4645acc17be252455.gif)](https://gyazo.com/1c5e5cfeb8cf1bc4645acc17be252455)
+
+横並び投稿済み写真は手動でスクロールが可能、また、写真をクリックすると非同期でクリックした写真を上部へ表示します。
+[![Image from Gyazo](https://i.gyazo.com/d0601b281d0da5cb37f44c1f746eb560.gif)](https://gyazo.com/d0601b281d0da5cb37f44c1f746eb560)
+
 
 ### ・写真削除機能
 ログインユーザー且つ投稿写真の投稿者のみが写真の削除の実行が可能です。
