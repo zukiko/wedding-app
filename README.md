@@ -28,7 +28,7 @@ Basic認証
 
 # 実装機能
 ### ・招待状トップ
-[![Image from Gyazo](https://i.gyazo.com/3b8ce28091bc788bb20084e361349c34.gif)](https://gyazo.com/3b8ce28091bc788bb20084e361349c34)
+[![Image from Gyazo](https://i.gyazo.com/1d586945cfdd867b0c94aab08f9fafad.gif)](https://gyazo.com/1d586945cfdd867b0c94aab08f9fafad)
 
 ### ・招待状入力機能
 招待状フォームに結婚式への参列有無の回答ができます。入力完了後は、
