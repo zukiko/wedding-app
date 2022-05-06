@@ -29,33 +29,33 @@ Basic認証
 # 実装機能
 
 ### ・招待状トップ
-<a href="https://gyazo.com/1d586945cfdd867b0c94aab08f9fafad"><img src="https://i.gyazo.com/1d586945cfdd867b0c94aab08f9fafad.gif" alt="Image from Gyazo" width="400"/></a>
+<video src="readme/video1.mp4" loop autoplay muted width="400"></video>
 
 ### ・招待状入力機能
 招待状フォームに結婚式への参列有無の回答ができます。入力完了後は、
 回答ありがとうございましたと表示されます。
-<a href="https://gyazo.com/54f42671f6cb068ab62bebb5a963bfad"><img src="https://i.gyazo.com/54f42671f6cb068ab62bebb5a963bfad.gif" alt="Image from Gyazo" width="400"/></a>
+<video src="readme/video2.mp4" loop autoplay muted width="400"></video>
 
 ### ・結婚式当日のWEBパンフレットログインの流れ
 WEBパンフレットログイン画面よりメールアドレスを入力後、WEBパンフレットページへ
 ログインが可能となります。
-[![Image from Gyazo](https://i.gyazo.com/4d188134c9df85dc1812574780bc99da.gif)](https://gyazo.com/4d188134c9df85dc1812574780bc99da)
+<video src="readme/video3.mp4" loop autoplay muted width="400"></video>
 
 ### ・席次表ページ
 席次表ページへ遷移後、上部へログインユーザーの名前とテーブル番号、メッセージが表示されます。下部へスクロールすると全体の席次表を表示しています。
-<a href="https://gyazo.com/3fa9aefcdd4f324492f2c10ba4b05568"><img src="https://i.gyazo.com/3fa9aefcdd4f324492f2c10ba4b05568.gif" alt="Image from Gyazo" width="400"/></a>
+<video src="readme/video4.mp4" loop autoplay muted width="400"></video>
 
 ### ・写真投稿機能
-写真投稿ボタンをクリック後、写真投稿ページへ遷移し、画像選択、テキスト入力完了後は、送信ボタンを押下すると写真一覧ページへ移動します。
-[![Image from Gyazo](https://i.gyazo.com/1c5e5cfeb8cf1bc4645acc17be252455.gif)](https://gyazo.com/1c5e5cfeb8cf1bc4645acc17be252455)
+写真投稿ボタンをクリック後、写真投稿ページへ遷移し、画像選択、テキスト入力完了後は、送信ボタンを押下すると写真一覧ページへ移動します。  
+<video src="readme/video5.mp4" loop autoplay muted width="400"></video>
 
 横並び投稿済み写真は手動でスクロールが可能、また、写真をクリックすると非同期でクリックした写真を上部へ表示します。
-[![Image from Gyazo](https://i.gyazo.com/d0601b281d0da5cb37f44c1f746eb560.gif)](https://gyazo.com/d0601b281d0da5cb37f44c1f746eb560)
+<video src="readme/video6.mp4" loop autoplay muted width="400"></video>
 
 
 ### ・写真削除機能
-ログインユーザー且つ投稿写真の投稿者のみが写真の削除の実行が可能です。
-[![Image from Gyazo](https://i.gyazo.com/79a101794129096a8e14458e675c17d7.gif)](https://gyazo.com/79a101794129096a8e14458e675c17d7)
+ログインユーザー且つ投稿写真の投稿者のみが写真の削除の実行が可能です。  
+<video src="readme/video7.mp4" loop autoplay muted width="400"></video>
 
 # 実装予定の機能
 - 招待状入力後、確認メールを回答者へ送信  
@@ -66,10 +66,10 @@ WEBパンフレットログイン画面よりメールアドレスを入力後�
 - 食事メニューページ
 
 # ER図
-![wedding](https://user-images.githubusercontent.com/100673178/166861337-7a52789b-8fc8-4d8e-9e4c-59f9720a6d3d.png)
+<img src="readme/er.png" width="400">
 
 # 画面遷移図
-[![Image from Gyazo](https://i.gyazo.com/951ef69a4902035156cbfbb16348457e.png)](https://gyazo.com/951ef69a4902035156cbfbb16348457e)
+<img src="readme/transition.png" width="400">
 
 ### 招待状ページ
 [招待状](https://weddingpamph.herokuapp.com/)
