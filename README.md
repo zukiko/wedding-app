@@ -28,6 +28,7 @@ Basic認証
 
 # 実装機能
 ### ・招待状トップ
+招待状トップ画面です。
 [![Image from Gyazo](https://i.gyazo.com/1d586945cfdd867b0c94aab08f9fafad.gif)](https://gyazo.com/1d586945cfdd867b0c94aab08f9fafad)
 
 ### ・招待状入力機能
