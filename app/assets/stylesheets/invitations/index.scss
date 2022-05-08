@@ -355,8 +355,8 @@ iframe {
   }
 }
 
-// スマホサイズ
-@media screen and (max-width: 400px) {
+// スマホ用
+@media screen and (max-width: 500px) {
   .weed-invi {
     font-size: 1.6rem;
     top: 90px;
@@ -369,7 +369,7 @@ iframe {
   .date {
     margin: 0 10px;
     font-size: 1.5rem;
-    padding: 35px 10px 10px 5px;
+    padding: 30px 10px 10px 5px;
   }
   .join {
     margin: -30px 0px 10px -25px;
@@ -404,9 +404,10 @@ iframe {
     width: 100%;
     font-size: 0.9rem;
     padding: 0 10px;
-  }s
+  }
   .invi-info {
     width: 100%;
+    background-position: center;
   }
   .host h2, .information h2, .access h2 {
     margin: 0 55px;
@@ -416,9 +417,6 @@ iframe {
   }
   .invi-btn {
     right: 5px;
-  }
-  .invi-info {
-    background-position: center;
   }
   .host-name h1 {
     font-size: 1.5rem;
