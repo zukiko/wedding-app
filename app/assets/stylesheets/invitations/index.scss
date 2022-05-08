@@ -336,7 +336,6 @@ iframe {
     font-size: 1.8rem;
     padding: 27px 10px 20px 5px;
     margin: 0 40px;
-    color: red;
   }
   .gr-img img, .br-img img {
     width: 200px;
@@ -355,5 +354,77 @@ iframe {
     margin: 0 100px;
   }
 }
+
+// スマホサイズ
+@media screen and (max-width: 400px) {
+  .weed-invi {
+    font-size: 1.6rem;
+    top: 90px;
+    height: 50px;
+  }
+  .main-img {
+    height: 180px;
+    margin: 0;
+  }
+  .date {
+    margin: 0 10px;
+    font-size: 1.5rem;
+    padding: 35px 10px 10px 5px;
+  }
+  .join {
+    margin: -30px 0px 10px -25px;
+  }
+  .gr-name {
+    padding-right: 35px;
+  }
+  .gr-name,
+  .br-name {
+    font-size: 1.8rem;
+  }
+  .gr-img img,
+  .br-img img {
+    width: 110px;
+    height: 80px;
+  }
+  .and {
+    font-size: 1.8rem;
+  }
+  .name-date {
+    padding: 0 10px 20px 10px;
+    background: linear-gradient(36deg, #ddc8c1 0%, #ddc8c1 50%, #bf9288de 50%, #bf92887a 100%);
+  }
+  .br-img {
+    padding-left: 25px;
+  }
+  .gr-img {
+    padding-right: 30px;
+  }
+  .greeting-text {
+    width: 100%;
+    margin: 0 5px;
+  }
+  .invi-info {
+    width: 100%;
+  }
+  .host h2, .information h2, .access h2 {
+    margin: 0 55px;
+  }
+  .host-name, .information ul, .access ul {
+    margin: 0 55px;
+  }
+  .invi-btn {
+    right: 5px;
+  }
+  .invi-info {
+    background-position: center;
+  }
+  .host-name h1 {
+    font-size: 1.5rem;
+  }
+  .fixed-bg {
+    background-attachment: inherit;
+  }
+}
+
 
 
