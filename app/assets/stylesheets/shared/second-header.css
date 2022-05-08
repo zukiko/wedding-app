@@ -133,3 +133,27 @@
   z-index: 10;
   cursor: pointer;
 }
+
+/* スマホ用 レスポンシブ対応 */
+@media screen and (max-width: 511px) {
+  #header {
+    font-size: 0.9rem;
+    padding: 0;
+  }
+  .header-title {
+    justify-content: space-around;
+  }
+  .site-title {
+    height: 50px;
+    width: 25%;
+    padding: 13px 0 0 10px;
+    font-size: 0.9rem;
+  }
+  .site-title::before {
+    left: -30px;
+    border-width: 24px 30px 27px 0;
+  }
+  .toggle-btn span {
+    width: 25px;
+  }
+}
