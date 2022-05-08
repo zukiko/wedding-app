@@ -66,5 +66,21 @@
   padding: 40px 0;
   list-style: none;
 }
-
+/* スマホ用 レスポンシブ対応 */
+@media screen and (max-width: 500px) {
+  .reception-date {
+    font-size: 2rem;
+    width: 40%;
+    line-height: 1.8;
+  }
+  .title {
+    width: 50%;
+    background-position: 73%;
+  }
+  .message p {
+    padding: 0 0 10px 8px;
+    font-size: 0.9rem;
+    
+  }
+}
 
