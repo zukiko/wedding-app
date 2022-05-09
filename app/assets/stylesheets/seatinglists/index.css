@@ -76,7 +76,7 @@
 }
 .attendee-table {
   font-family: 'Neonderthaw', cursive;
-  font-size: 60px;
+  font-size: 4rem;
   padding: 0 5px;
 }
 .attendee-message {
@@ -113,4 +113,26 @@
   position: absolute;
   text-align: left;
   font-family: 'Kaisei Opti', serif;
+}
+
+/* スマホ用 レスポンシブ対応 */
+@media screen and (max-width: 511px) {
+  .message-card {
+    width: 100%;
+  }
+  .text {
+    font-size: 1.1rem;
+  }
+  .groom-name, .bride-name {
+    width: 20%;
+  }
+  .table-num {
+    font-size: 2rem;
+  }
+  .attendee {
+    font-size: 0.7rem;
+  }
+  .table-container ul {
+    justify-content: center;
+  }
 }
