@@ -27,3 +27,13 @@
 input[type="file"] {
   display: none;
 }
+
+/* スマホ用 レスポンシブ対応 */
+@media screen and (max-width: 511px) {
+  .post-area {
+    padding: 180px 30px 216px 30px;
+  }
+  .img-textarea {
+    width: 90%;
+  }
+}
