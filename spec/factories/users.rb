@@ -10,6 +10,6 @@ FactoryBot.define do
     city             { '広島市' }
     address          { '中区1-1' }
     building         { Faker::Address.street_address }
-    admin            {Faker::Boolean.boolean}
+    admin            { Faker::Boolean.boolean }
   end
 end

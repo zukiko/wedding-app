@@ -14,8 +14,8 @@ class Ability
       can :access, :rails_admin
       # 全ての機能を使えるように設定
       can :manage, :all
-    #   else
-    #     can :read, :all
+      #   else
+      #     can :read, :all
     end
     #
     # The first argument to `can` is the action you are giving the user
