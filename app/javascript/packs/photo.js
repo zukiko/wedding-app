@@ -55,7 +55,7 @@ $(document).ready(function () {
     }
 
   $(".owl-carousel").owlCarousel({
-    items: 7, /*表示する項目*/
+    items: 5, /*表示する項目*/
     margin: 5,
     loop: true,
     center: true,
