@@ -7,7 +7,6 @@
   color: #000;
 }
 .photo-title h1 {
-  padding: 30px 0 30px 0;
   font-size: 1.2rem;
   position: relative;
   padding: 15px 0 15px 30px;
@@ -91,12 +90,12 @@
 #photo-name {
   padding: 20px 0 20px 20px;
   text-align: left;
-  font-size: 18px;
+  font-size: 1.2rem;
 }
 #photo-text {
   text-align: left;
   padding-left: 20px;
-  font-size: 15px;
+  font-size: 1rem;
 }
 #photo-delete i {
   padding: 20px 0 0 20px;
@@ -108,5 +107,32 @@ a {
 .material-icons {
   color: #504c4c;
   
+}
+
+/* スマホ用 レスポンシブ対応 */
+@media screen and (max-width: 511px) {
+  .photo-container {
+    padding: 60px 10px;
+  }
+  .photo-title h1 {
+    font-size: 1rem;
+    padding: 15px 15px;
+    width: 89%;
+    margin-bottom: 25px;
+    margin-left: 20px;
+  }
+  .photo-main {
+    width: 100%;
+  }
+  #photo-name {
+    padding: 20px 0 20px 10px;
+    font-size: 1rem;
+  }
+  #photo-text {
+    padding-left: 10px;
+  }
+  #photo-delete i {
+    padding: 20px 0 0 10px;
+  }
 }
 
