@@ -1,16 +1,16 @@
 class SeatinglistsController < ApplicationController
   before_action :authenticate_user!
-  
-  def index
-    @lists=SeatingList.includes(:user).order(:table)
-    @tables=SeatingList.where(user_id: current_user.id)
 
-    @Atable_nameLists=[]
-    @Btable_nameLists=[]
-    @Ctable_nameLists=[]
-    @Dtable_nameLists=[]
-    @Etable_nameLists=[]
-    @Ftable_nameLists=[]
+  def index
+    @lists = SeatingList.includes(:user).order(:table)
+    @tables = SeatingList.where(user_id: current_user.id)
+
+    @Atable_nameLists = []
+    @Btable_nameLists = []
+    @Ctable_nameLists = []
+    @Dtable_nameLists = []
+    @Etable_nameLists = []
+    @Ftable_nameLists = []
 
     @lists.each do |list|
       if list.table == 'A'
@@ -27,14 +27,11 @@ class SeatinglistsController < ApplicationController
         @Ftable_nameLists.push(list.user.name)
       end
     end
-
   end
 
   def new
-    
   end
 
   def create
-    
   end
 end

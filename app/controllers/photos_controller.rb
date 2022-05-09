@@ -1,21 +1,19 @@
 class PhotosController < ApplicationController
   before_action :authenticate_user!
-  
+
   def index
-    @photos=Photo.includes(:user)
-    
-    #ゲストがログインしている場合はcurrent_user.idを取得
-    if user_signed_in?
-      gon.current_user_id = current_user.id
-    end
+    @photos = Photo.includes(:user)
+
+    # ゲストがログインしている場合はcurrent_user.idを取得
+    gon.current_user_id = current_user.id if user_signed_in?
   end
 
   def new
-    @photo=Photo.new
+    @photo = Photo.new
   end
 
   def create
-    @photo=Photo.new(photo_params)
+    @photo = Photo.new(photo_params)
     if @photo.save
       redirect_to photos_path
     else
@@ -24,7 +22,7 @@ class PhotosController < ApplicationController
   end
 
   def destroy
-    @photo=Photo.find(params[:id])
+    @photo = Photo.find(params[:id])
     @photo.destroy
     redirect_to photos_path
   end
