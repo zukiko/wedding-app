@@ -1,12 +1,12 @@
 require 'rails_helper'
 
 def basic_pass(path)
-  username = ENV["BASIC_AUTH_USER"]
-  password = ENV["BASIC_AUTH_PASSWORD"]
+  username = ENV['BASIC_AUTH_USER']
+  password = ENV['BASIC_AUTH_PASSWORD']
   visit "http://#{username}:#{password}@#{Capybara.current_session.server.host}:#{Capybara.current_session.server.port}#{path}"
 end
 
-RSpec.describe "Photos", type: :system do
+RSpec.describe 'Photos', type: :system do
   before do
     @user = FactoryBot.create(:user)
     @photo = FactoryBot.build(:photo)
@@ -35,9 +35,9 @@ RSpec.describe "Photos", type: :system do
       post = 'テスト'
       fill_in 'photo_text', with: post
       # 送信した内容がDBに保存されていることを確認する
-      expect{
+      expect  do
         find('input[name="commit"]').click
-      }.to change { Photo.count }.by(1)
+      end.to change { Photo.count }.by(1)
       # 投稿が完了すると写真一覧ページに移動する
       expect(current_path).to eq(photos_path)
       # 写真一覧ページには先ほど投稿した内容が存在することを確認する（画像）
@@ -62,9 +62,9 @@ RSpec.describe "Photos", type: :system do
       # 投稿ページへ移動する
       visit new_photo_path
       # DBに保存されていないことを確認する
-      expect {
+      expect do
         find('input[name="commit"]').click
-      }.not_to change { Photo.count }
+      end.not_to change { Photo.count }
     end
   end
 end

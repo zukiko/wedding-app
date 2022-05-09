@@ -1,6 +1,6 @@
 FactoryBot.define do
   factory :photo do
-    text       { Faker::Lorem.sentence }
+    text { Faker::Lorem.sentence }
     association :user
 
     after(:build) do |photo|
