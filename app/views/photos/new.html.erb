@@ -8,10 +8,7 @@
         <div class="click-upload">
         <%# エラーメッセージを入力項目ごとに表示 %>
         <%= render "shared/error_messages", model: @photo, attribute: :image %>
-          <label>
-            <i class="material-icons">add_a_photo</i>
-            <input type="file" name="file">
-          </label>
+            <%= f.file_field :image, id:"item-image" %>
         </div>
         <div id="new-image"></div>
 
