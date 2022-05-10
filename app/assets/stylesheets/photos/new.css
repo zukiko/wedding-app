@@ -24,9 +24,9 @@
 .click-upload i {
   font-size: 1.9rem;
 }
-/* input[type="file"] {
+input[type="file"] {
   display: none;
-} */
+}
 
 /* スマホ用 レスポンシブ対応 */
 @media screen and (max-width: 511px) {
