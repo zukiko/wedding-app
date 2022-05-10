@@ -15,6 +15,9 @@
             <a id="photo-delete" rel="nofollow" data-method="delete">
               <i class="material-icons delete-icon" style="color: #20284e;"><span class="material-symbols-outlined">close</span></i>
             </a>
+            <a id="photo-edit" rel="nofollow" data-method="edit">
+              <i class="material-icons edit-icon" style="color: #20284e;"><span class="material-symbols-outlined">edit</span></i>
+            </a>
         </div>
       </div>
       
@@ -32,7 +35,7 @@
             <% @photos.each do |photo| %>
               <div class="photo-items">
                   <ul>
-                    <li class="item-img"><%= image_tag photo.image.variant(resize: "300x300!", gravity: "center", crop: "300x300+0+0").processed %></li>
+                    <li class="item-img"><%= image_tag photo.image %></li>
                     <li class="item-name"><%= "#{photo.user.name} 様" %></li>
                     <li class="item-text"><%= photo.text %></li>
                     <li class="item-id"><%= photo.id %></li>
