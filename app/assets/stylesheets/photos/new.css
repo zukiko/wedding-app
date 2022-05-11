@@ -1,6 +1,6 @@
 .post-area {
   text-align: center;
-  padding: 180px 200px 216px 150px;
+  padding: 180px 200px 240px 150px;
 }
 .new-img{
   width: 400px;
@@ -31,9 +31,12 @@ input[type="file"] {
 /* スマホ用 レスポンシブ対応 */
 @media screen and (max-width: 511px) {
   .post-area {
-    padding: 180px 30px 216px 30px;
+    padding: 180px 30px 332px 30px;
   }
   .img-textarea {
     width: 90%;
+  }
+  .new-img {
+    width: 330px;
   }
 }

@@ -76,16 +76,7 @@
   width: 100%;
 }
 .photo-main {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 70%;
-  margin: 0 auto;
   display: none;
-  font-weight: 300;
-}
-.name-text {
-  width: 30%;
 }
 #photo-name {
   padding: 20px 0 20px 20px;
@@ -112,7 +103,7 @@ a {
 /* スマホ用 レスポンシブ対応 */
 @media screen and (max-width: 511px) {
   .photo-container {
-    padding: 60px 10px;
+    padding: 60px 10px 440px;
   }
   .photo-title h1 {
     font-size: 1rem;
