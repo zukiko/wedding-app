@@ -40,6 +40,22 @@ $(document).ready(function () {
           let deleteIcon = document.getElementsByClassName("delete-icon");
           deleteIcon[0].style.display = "none";
         }
+
+        // 編集対象のidを取得
+        let editElement = document.getElementById("photo-edit");
+        editElement.href = "/photos/" + id +"/edit";
+
+        // ログインidと投稿者idが同じ場合は編集ボタンを表示する
+        if(gon.current_user_id == userid){
+          // editアイコンを表示
+          let editIcon = document.getElementsByClassName("edit-icon");
+          editIcon[0].style.display = "block";
+        }else{
+          // editアイコンを非表示
+          let editIcon = document.getElementsByClassName("edit-icon");
+          editIcon[0].style.display = "none";
+        }
+
         // クリックした写真の情報をフェードイン表示する
         $(this).fadeIn();
       })
