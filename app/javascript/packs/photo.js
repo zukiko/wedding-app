@@ -4,7 +4,7 @@ $(document).ready(function () {
 
       // photo-mainを表示
       const el = document.getElementsByClassName("photo-main");
-      el[0].style.display = "flex";
+      // el[0].style.display = "flex";
 
       // 写真の情報を取得
       img    = $(this).find('.item-img img').attr('src');
