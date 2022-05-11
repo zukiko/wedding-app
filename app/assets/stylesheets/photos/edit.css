@@ -1,0 +1,15 @@
+.edit-image {
+  width: 400px;
+  object-fit: cover;
+  margin: 0 auto;
+}
+.edit-image img {
+  width: 100%;
+}
+
+/* スマホ用 レスポンシブ対応 */
+@media screen and (max-width: 511px) {
+  .edit-image {
+    width: 330px;
+  }
+}
