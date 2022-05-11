@@ -1,5 +1,6 @@
 class PhotosController < ApplicationController
   before_action :authenticate_user!
+  before_action :set_photo, only: [:edit, :update, :destroy]
 
   def index
     @photos = Photo.includes(:user)
@@ -22,11 +23,12 @@ class PhotosController < ApplicationController
   end
 
   def edit
-    @photo = Photo.find(params[:id])
+    unless user_signed_in? && current_user.id == @photo.user_id
+      redirect_to photos_path
+    end
   end
 
   def update
-    @photo = Photo.find(params[:id])
     if @photo.update(photo_params)
       redirect_to photos_path
     else
@@ -35,7 +37,6 @@ class PhotosController < ApplicationController
   end
 
   def destroy
-    @photo = Photo.find(params[:id])
     @photo.destroy
     redirect_to photos_path
   end
@@ -44,5 +45,9 @@ class PhotosController < ApplicationController
 
   def photo_params
     params.require(:photo).permit(:text, :image).merge(user_id: current_user.id)
+  end
+
+  def set_photo
+    @photo = Photo.find(params[:id])
   end
 end
