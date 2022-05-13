@@ -1,0 +1,41 @@
+.profile-wrapper {
+    background-image: linear-gradient(135deg, #fdfcfb 0%, #e2d1c3 100%);
+    padding-top: 130px;
+    font-family: 'Noto Serif JP', serif;
+}
+.profile {
+  display: flex;
+  justify-content: space-around;
+  padding: 15px 0;
+  font-size: 1.1rem;
+  width: 70%;
+  margin: 0 auto;
+
+}
+.answer {
+  /* padding: 0 30px; */
+}
+.profile-image {
+  display: flex;
+  justify-content: space-evenly;
+  width: 70%;
+  margin: 0 auto;
+}
+.profile-groom {
+  width: 200px;
+  border-radius: 50%;
+  height: 200px;
+  object-fit: cover;
+}
+.profile-groom img {
+  width: 100%;
+}
+.profile-bride {
+  width: 200px;
+  border-radius: 50%;
+  height: 200px;
+  object-fit: cover;
+}
+.profile-bride img {
+  width: 100%;
+}
