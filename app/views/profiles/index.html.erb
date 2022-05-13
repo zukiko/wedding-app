@@ -1,0 +1,24 @@
+<%# ヘッダーの部分テンプレートへ遷移 %>
+<%= render "shared/second-header" %>
+
+<div class="profile-wrapper">
+  <div class="profile-image">
+    <%= image_tag "groom-img.jpg",class:"profile-groom" %>
+    <%= image_tag "bride-img.jpg",class:"profile-bride" %>
+  </div>
+  <% @profiles.each do |profile| %>
+    <div class="profile">
+      <div class="answer">
+        <%= profile.groom_answer %>
+      </div>
+      <div class="profile-item">
+        <%= profile.item %>
+      </div>
+      <div class="answer">
+        <%= profile.bride_answer %>
+      </div>
+    </div>
+  <% end %>
+  <%# フッターーの部分テンプレートへ遷移 %>
+  <%= render "shared/footer" %>
+</div>
