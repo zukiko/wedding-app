@@ -70,10 +70,13 @@
   .profile {
     width: 100%;
     font-size: 0.9rem;
-    justify-content: normal;
+    justify-content: center;
   }
   .profile-item {
-    width: auto;
-    margin: 0 ;
+    width: 30%;
+    margin: 0;
+  }
+  .answer {
+    width: 30%;
   }
 }

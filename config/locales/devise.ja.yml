@@ -27,6 +27,9 @@ ja:
         updated_at: 更新日
     models:
       user: ユーザー
+      photo: 写真投稿
+      seating_list: 席次表
+      profile: プロフィール
   devise:
     confirmations:
       confirmed: メールアドレスが確認できました。
