@@ -24,9 +24,7 @@ class PhotosController < ApplicationController
 
   def edit
     # ゲストがログイン状態且つログインユーザーと写真投稿者が一致しない場合は編集ページは遷移せずphotos_pathへ
-    unless user_signed_in? && current_user.id == @photo.user_id
-      redirect_to photos_path
-    end
+    redirect_to photos_path unless user_signed_in? && current_user.id == @photo.user_id
   end
 
   def update
