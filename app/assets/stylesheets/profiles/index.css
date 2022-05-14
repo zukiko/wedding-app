@@ -70,9 +70,10 @@
   .profile {
     width: 100%;
     font-size: 0.9rem;
+    justify-content: normal;
   }
   .profile-item {
     width: auto;
-    margin: 0 30px;
+    margin: 0 ;
   }
 }
