@@ -3,8 +3,10 @@ class SeatinglistsController < ApplicationController
 
   def index
     @lists = SeatingList.includes(:user).order(:table)
+    # 条件はログインユーザー
     @tables = SeatingList.where(user_id: current_user.id)
-
+    
+    # 各テーブルに座るゲストを配列に入れる
     @Atable_nameLists = []
     @Btable_nameLists = []
     @Ctable_nameLists = []
@@ -12,6 +14,7 @@ class SeatinglistsController < ApplicationController
     @Etable_nameLists = []
     @Ftable_nameLists = []
 
+    # 配列の要素を追加するためpush(追加する要素)を使用
     @lists.each do |list|
       if list.table == 'A'
         @Atable_nameLists.push(list.user.name)
