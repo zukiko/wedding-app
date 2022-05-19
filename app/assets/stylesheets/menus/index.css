@@ -1,0 +1,6 @@
+.menu-wrapper {
+  background-image: linear-gradient(135deg, #fdfcfb 0%, #e2d1c3 100%);
+  padding-top: 130px;
+  font-family: 'Noto Serif JP', serif;
+  color: rgb(58, 54, 54);
+}
