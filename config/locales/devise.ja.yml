@@ -30,6 +30,7 @@ ja:
       photo: 写真投稿
       seating_list: 席次表
       profile: プロフィール
+      menu: メニュー
   devise:
     confirmations:
       confirmed: メールアドレスが確認できました。
