@@ -14,4 +14,5 @@ Rails.application.routes.draw do
   resources :seatinglists, only:[:index]
   resources :photos, only:[:index,:new,:create,:edit,:update,:destroy]
   resources :profiles, only:[:index]
+  resources :menus, only:[:index]
 end

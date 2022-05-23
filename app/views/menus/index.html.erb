@@ -1,0 +1,32 @@
+<%# ヘッダーの部分テンプレートへ遷移 %>
+<%= render "shared/second-header" %>
+
+<div class="menu-wrapper">
+  <div class="menu-container">
+    <h1>Menu</h1>
+    <% @menus.each do |menu| %>
+      <ul class="meal-menu">
+        <li><%= menu.meal_menu %></li>
+      </ul>
+    <% end %>
+    
+    <div class="drink">
+      <h1>Drink</h1>
+      <h2>アルコール</h2>
+        <% @menus.each do |menu| %>
+          <div class="alcohol">
+            <%= menu.alcohol %> 
+          </div>
+        <% end %>
+
+        <h2>ソフトドリンク</h2>
+        <% @menus.each do |menu| %>
+          <div class="alcohol-free">
+            <%= menu.alcohol_free %> 
+          </div>
+        <% end %>
+    </div>
+  </div>
+<%# フッターーの部分テンプレートへ遷移 %>
+  <%= render "shared/footer" %>
+</div>
