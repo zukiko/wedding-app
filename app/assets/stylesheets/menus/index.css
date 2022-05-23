@@ -4,3 +4,46 @@
   font-family: 'Noto Serif JP', serif;
   color: rgb(58, 54, 54);
 }
+.meal-menu li {
+  background: #ddc8c15c;
+  border-radius: 14px;
+  width: 320px;
+  height: 80px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 15px;
+}
+
+.meal-menu,
+.alcohol,
+.alcohol-free {
+  line-height: 3;
+}
+.menu-container h1 {
+  font-size: 1.9rem;
+  padding: 10px 0;
+  font-family: 'Petit Formal Script', cursive;
+}
+.menu-container h2 {
+  font-size: 1.1rem;
+  padding: 10px 0;
+}
+.menu-container {
+  text-align: center;
+  margin-bottom: 60px;
+}
+.alcohol,
+.alcohol-free {
+  background-color: #ddc8c15c;
+  width: 320px;
+  margin: 0 auto;
+}
+
+.menu-container h2,
+.menu-container h2 {
+  background-color: #e9b3408f;
+  width: 320px;
+  margin: 0 auto;
+}

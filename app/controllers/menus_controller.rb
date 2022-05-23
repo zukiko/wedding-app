@@ -1,7 +1,7 @@
 class MenusController < ApplicationController
 
   def index
-    @menus = Profile.all
+    @menus = Menu.all
   end
   
 end
